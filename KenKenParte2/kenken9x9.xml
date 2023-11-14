@@ -101,4 +101,308 @@
 
     </solucion>
 
+
+
+    <solucion>
+        <codigo>9x9E-2_com</codigo>
+        <nivelDificultad>Facil</nivelDificultad>
+        <celda>1, (1,1)</celda>
+        <celda>2, (1,2)</celda>
+        <celda>8, (1,3)</celda>
+        <celda>3, (1,4)</celda>
+        <celda>9, (1,5)</celda>
+        <celda>6, (1,6)</celda>
+        <celda>7, (1,7)</celda>
+        <celda>5, (1,8)</celda>
+        <celda>4, (1,9)</celda>
+
+
+        <celda>6, (2,1)</celda>
+        <celda>9, (2,2)</celda>
+        <celda>2, (2,3)</celda>
+        <celda>7, (2,4)</celda>
+        <celda>8, (2,5)</celda>
+        <celda>1, (2,6)</celda>
+        <celda>5, (2,7)</celda>
+        <celda>4, (2,8)</celda>
+        <celda>3, (2,9)</celda>
+
+
+        <celda>4, (3,1)</celda>
+        <celda>3, (3,2)</celda>
+        <celda>1, (3,3)</celda>
+        <celda>2, (3,4)</celda>
+        <celda>6, (3,5)</celda>
+        <celda>5, (3,6)</celda>
+        <celda>8, (3,7)</celda>
+        <celda>7, (3,8)</celda>
+        <celda>9, (3,9)</celda>
+
+
+        <celda>8, (4,1)</celda>
+        <celda>1, (4,2)</celda>
+        <celda>7, (4,3)</celda>
+        <celda>4, (4,4)</celda>
+        <celda>3, (4,5)</celda>
+        <celda>9, (4,6)</celda>
+        <celda>2, (4,7)</celda>
+        <celda>6, (4,8)</celda>
+        <celda>5, (4,9)</celda>
+
+
+        <celda>5, (5,1)</celda>
+        <celda>8, (5,2)</celda>
+        <celda>3, (5,3)</celda>
+        <celda>1, (5,4)</celda>
+        <celda>2, (5,5)</celda>
+        <celda>4, (5,6)</celda>
+        <celda>6, (5,7)</celda>
+        <celda>9, (5,8)</celda>
+        <celda>7, (5,9)</celda>
+
+
+        <celda>3, (6,1)</celda>
+        <celda>5, (6,2)</celda>
+        <celda>6, (6,3)</celda>
+        <celda>8, (6,4)</celda>
+        <celda>4, (6,5)</celda>
+        <celda>7, (6,6)</celda>
+        <celda>9, (6,7)</celda>
+        <celda>2, (6,8)</celda>
+        <celda>1, (6,9)</celda>
+
+        <celda>9, (7,1)</celda>
+        <celda>7, (7,2)</celda>
+        <celda>5, (7,3)</celda>
+        <celda>6, (7,4)</celda>
+        <celda>1, (7,5)</celda>
+        <celda>8, (7,6)</celda>
+        <celda>4, (7,7)</celda>
+        <celda>3, (7,8)</celda>
+        <celda>2, (7,9)</celda>
+
+        <celda>7, (8,1)</celda>
+        <celda>6, (8,2)</celda>
+        <celda>4, (8,3)</celda>
+        <celda>9, (8,4)</celda>
+        <celda>5, (8,5)</celda>
+        <celda>2, (8,6)</celda>
+        <celda>3, (8,7)</celda>
+        <celda>1, (8,8)</celda>
+        <celda>8, (8,9)</celda>
+
+        <celda>2, (9,1)</celda>
+        <celda>4, (9,2)</celda>
+        <celda>9, (9,3)</celda>
+        <celda>5, (9,4)</celda>
+        <celda>7, (9,5)</celda>
+        <celda>3, (9,6)</celda>
+        <celda>1, (9,7)</celda>
+        <celda>8, (9,8)</celda>
+        <celda>6, (9,9)</celda>
+    </solucion>
+
+
+    <solucion>
+        <codigo>9x9H-1_com</codigo>
+        <nivelDificultad>Medio</nivelDificultad>
+        <celda>2, (1,1)</celda>
+        <celda>7, (1,2)</celda>
+        <celda>4, (1,3)</celda>
+        <celda>8, (1,4)</celda>
+        <celda>9, (1,5)</celda>
+        <celda>3, (1,6)</celda>
+        <celda>1, (1,7)</celda>
+        <celda>5, (1,8)</celda>
+        <celda>6, (1,9)</celda>
+
+
+        <celda>4, (2,1)</celda>
+        <celda>1, (2,2)</celda>
+        <celda>8, (2,3)</celda>
+        <celda>9, (2,4)</celda>
+        <celda>7, (2,5)</celda>
+        <celda>5, (2,6)</celda>
+        <celda>2, (2,7)</celda>
+        <celda>5, (2,8)</celda>
+        <celda>3, (2,9)</celda>
+
+
+        <celda>3, (3,1)</celda>
+        <celda>5, (3,2)</celda>
+        <celda>7, (3,3)</celda>
+        <celda>4, (3,4)</celda>
+        <celda>2, (3,5)</celda>
+        <celda>6, (3,6)</celda>
+        <celda>9, (3,7)</celda>
+        <celda>8, (3,8)</celda>
+        <celda>1, (3,9)</celda>
+
+
+        <celda>6, (4,1)</celda>
+        <celda>2, (4,2)</celda>
+        <celda>3, (4,3)</celda>
+        <celda>1, (4,4)</celda>
+        <celda>8, (4,5)</celda>
+        <celda>9, (4,6)</celda>
+        <celda>7, (4,7)</celda>
+        <celda>4, (4,8)</celda>
+        <celda>5, (4,9)</celda>
+
+
+        <celda>8, (5,1)</celda>
+        <celda>3, (5,2)</celda>
+        <celda>5, (5,3)</celda>
+        <celda>2, (5,4)</celda>
+        <celda>1, (5,5)</celda>
+        <celda>4, (5,6)</celda>
+        <celda>6, (5,7)</celda>
+        <celda>7, (5,8)</celda>
+        <celda>9, (5,9)</celda>
+
+
+        <celda>7, (6,1)</celda>
+        <celda>6, (6,2)</celda>
+        <celda>2, (6,3)</celda>
+        <celda>3, (6,4)</celda>
+        <celda>5, (6,5)</celda>
+        <celda>1, (6,6)</celda>
+        <celda>8, (6,7)</celda>
+        <celda>9, (6,8)</celda>
+        <celda>4, (6,9)</celda>
+
+        <celda>1, (7,1)</celda>
+        <celda>9, (7,2)</celda>
+        <celda>6, (7,3)</celda>
+        <celda>5, (7,4)</celda>
+        <celda>3, (7,5)</celda>
+        <celda>7, (7,6)</celda>
+        <celda>4, (7,7)</celda>
+        <celda>2, (7,8)</celda>
+        <celda>8, (7,9)</celda>
+
+        <celda>5, (8,1)</celda>
+        <celda>4, (8,2)</celda>
+        <celda>9, (8,3)</celda>
+        <celda>7, (8,4)</celda>
+        <celda>6, (8,5)</celda>
+        <celda>8, (8,6)</celda>
+        <celda>3, (8,7)</celda>
+        <celda>1, (8,8)</celda>
+        <celda>2, (8,9)</celda>
+
+        <celda>9, (9,1)</celda>
+        <celda>8, (9,2)</celda>
+        <celda>1, (9,3)</celda>
+        <celda>6, (9,4)</celda>
+        <celda>4, (9,5)</celda>
+        <celda>2, (9,6)</celda>
+        <celda>5, (9,7)</celda>
+        <celda>3, (9,8)</celda>
+        <celda>7, (9,9)</celda>
+    </solucion>
+
+
+
+
+
+        <solucion>
+        <codigo>9x9H-2_com</codigo>
+        <nivelDificultad>Medio</nivelDificultad>
+        <celda>5, (1,1)</celda>
+        <celda>7, (1,2)</celda>
+        <celda>4, (1,3)</celda>
+        <celda>8, (1,4)</celda>
+        <celda>9, (1,5)</celda>
+        <celda>3, (1,6)</celda>
+        <celda>2, (1,7)</celda>
+        <celda>6, (1,8)</celda>
+        <celda>1, (1,9)</celda>
+
+
+        <celda>1, (2,1)</celda>
+        <celda>5, (2,2)</celda>
+        <celda>2, (2,3)</celda>
+        <celda>4, (2,4)</celda>
+        <celda>7, (2,5)</celda>
+        <celda>9, (2,6)</celda>
+        <celda>3, (2,7)</celda>
+        <celda>8, (2,8)</celda>
+        <celda>6, (2,9)</celda>
+
+
+        <celda>3, (3,1)</celda>
+        <celda>4, (3,2)</celda>
+        <celda>5, (3,3)</celda>
+        <celda>1, (3,4)</celda>
+        <celda>8, (3,5)</celda>
+        <celda>6, (3,6)</celda>
+        <celda>7, (3,7)</celda>
+        <celda>2, (3,8)</celda>
+        <celda>9, (3,9)</celda>
+
+
+        <celda>4, (4,1)</celda>
+        <celda>8, (4,2)</celda>
+        <celda>7, (4,3)</celda>
+        <celda>9, (4,4)</celda>
+        <celda>2, (4,5)</celda>
+        <celda>1, (4,6)</celda>
+        <celda>6, (4,7)</celda>
+        <celda>3, (4,8)</celda>
+        <celda>5, (4,9)</celda>
+
+
+        <celda>2, (5,1)</celda>
+        <celda>6, (5,2)</celda>
+        <celda>9, (5,3)</celda>
+        <celda>5, (5,4)</celda>
+        <celda>4, (5,5)</celda>
+        <celda>7, (5,6)</celda>
+        <celda>8, (5,7)</celda>
+        <celda>1, (5,8)</celda>
+        <celda>3, (5,9)</celda>
+
+
+        <celda>9, (6,1)</celda>
+        <celda>2, (6,2)</celda>
+        <celda>3, (6,3)</celda>
+        <celda>7, (6,4)</celda>
+        <celda>6, (6,5)</celda>
+        <celda>8, (6,6)</celda>
+        <celda>1, (6,7)</celda>
+        <celda>5, (6,8)</celda>
+        <celda>4, (6,9)</celda>
+
+        <celda>6, (7,1)</celda>
+        <celda>9, (7,2)</celda>
+        <celda>1, (7,3)</celda>
+        <celda>2, (7,4)</celda>
+        <celda>3, (7,5)</celda>
+        <celda>5, (7,6)</celda>
+        <celda>4, (7,7)</celda>
+        <celda>7, (7,8)</celda>
+        <celda>8, (7,9)</celda>
+
+        <celda>8, (8,1)</celda>
+        <celda>1, (8,2)</celda>
+        <celda>6, (8,3)</celda>
+        <celda>3, (8,4)</celda>
+        <celda>5, (8,5)</celda>
+        <celda>2, (8,6)</celda>
+        <celda>9, (8,7)</celda>
+        <celda>4, (8,8)</celda>
+        <celda>7, (8,9)</celda>
+
+        <celda>7, (9,1)</celda>
+        <celda>3, (9,2)</celda>
+        <celda>8, (9,3)</celda>
+        <celda>6, (9,4)</celda>
+        <celda>1, (9,5)</celda>
+        <celda>4, (9,6)</celda>
+        <celda>5, (9,7)</celda>
+        <celda>9, (9,8)</celda>
+        <celda>2, (9,9)</celda>
+    </solucion>
+
 </KenKen>
