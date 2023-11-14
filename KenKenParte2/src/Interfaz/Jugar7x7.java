@@ -44,7 +44,7 @@ public class Jugar7x7 extends javax.swing.JFrame {
         jButtonTerminarJuego.setEnabled(false);
         jButtonReiniciarJuego.setEnabled(false);
         jButtonOtroJuego.setEnabled(false);
-        matrizDeLabels= new JLabel[6][6];
+        matrizDeLabels= new JLabel[7][7];
         this.crearMatrizLabels();
         this.definirColorLabels();
         this.setLocationRelativeTo(this);
@@ -192,36 +192,49 @@ public class Jugar7x7 extends javax.swing.JFrame {
         matrizDeLabels[0][3]=jLabel_1_4;
         matrizDeLabels[0][4]=jLabel_1_5;
         matrizDeLabels[0][5]=jLabel_1_6;
+        matrizDeLabels[0][6]=jLabel_1_6;
         matrizDeLabels[1][0]=jLabel_2_1;
         matrizDeLabels[1][1]=jLabel_2_2;
         matrizDeLabels[1][2]=jLabel_2_3;
         matrizDeLabels[1][3]=jLabel_2_4;
         matrizDeLabels[1][4]=jLabel_2_5;
         matrizDeLabels[1][5]=jLabel_2_6;
+        matrizDeLabels[1][6]=jLabel_2_6;
         matrizDeLabels[2][0]=jLabel_3_1;
         matrizDeLabels[2][1]=jLabel_3_2;
         matrizDeLabels[2][2]=jLabel_3_3;
         matrizDeLabels[2][3]=jLabel_3_4;
         matrizDeLabels[2][4]=jLabel_3_5;
         matrizDeLabels[2][5]=jLabel_3_6;
+        matrizDeLabels[2][6]=jLabel_3_6;
         matrizDeLabels[3][0]=jLabel_4_1;
         matrizDeLabels[3][1]=jLabel_4_2;
         matrizDeLabels[3][2]=jLabel_4_3;
         matrizDeLabels[3][3]=jLabel_4_4;
         matrizDeLabels[3][4]=jLabel_4_5;
         matrizDeLabels[3][5]=jLabel_4_6;
+        matrizDeLabels[3][6]=jLabel_4_6;
         matrizDeLabels[4][0]=jLabel_5_1;
         matrizDeLabels[4][1]=jLabel_5_2;
         matrizDeLabels[4][2]=jLabel_5_3;
         matrizDeLabels[4][3]=jLabel_5_4;
         matrizDeLabels[4][4]=jLabel_5_5;
         matrizDeLabels[4][5]=jLabel_5_6;
+        matrizDeLabels[4][6]=jLabel_5_6;
         matrizDeLabels[5][0]=jLabel_6_1;
         matrizDeLabels[5][1]=jLabel_6_2;
         matrizDeLabels[5][2]=jLabel_6_3;
         matrizDeLabels[5][3]=jLabel_6_4;
         matrizDeLabels[5][4]=jLabel_6_5;
         matrizDeLabels[5][5]=jLabel_6_6;
+        matrizDeLabels[5][6]=jLabel_6_6;
+        matrizDeLabels[6][0]=jLabel_6_1;
+        matrizDeLabels[6][1]=jLabel_6_2;
+        matrizDeLabels[6][2]=jLabel_6_3;
+        matrizDeLabels[6][3]=jLabel_6_4;
+        matrizDeLabels[6][4]=jLabel_6_5;
+        matrizDeLabels[6][5]=jLabel_6_6;
+        matrizDeLabels[6][6]=jLabel_6_6;
     }
     
     /**
@@ -231,8 +244,8 @@ public class Jugar7x7 extends javax.swing.JFrame {
      */
     public void introducirNumeroEnCasilla(int num) {
         String texto;
-        for (int i=0;i<6;i++) {
-            for (int j=0;j<6;j++) {
+        for (int i=0;i<7;i++) {
+            for (int j=0;j<7;j++) {
                 if (matrizDeLabels[i][j].isOpaque()) {
                     texto=matrizDeLabels[i][j].getText();
                     bd.annadirAccionEscribir(i, j, texto);
@@ -268,8 +281,8 @@ public class Jugar7x7 extends javax.swing.JFrame {
      */
     public void borrarNumero(){
         String texto="";
-        for (int i=0;i<6;i++) {
-            for (int j=0;j<6;j++) {
+        for (int i=0;i<7;i++) {
+            for (int j=0;j<7;j++) {
                 if (matrizDeLabels[i][j].isOpaque()) {
                     texto=matrizDeLabels[i][j].getText();
                     bd.annadirAccionBorrar(i, j, texto);
@@ -376,8 +389,8 @@ public class Jugar7x7 extends javax.swing.JFrame {
      * @param solucion
      */
     public void validarKenKen(boolean[][] solucion){
-        for (int i=0; i<6; i++) {
-            for (int j=0; j<6; j++) {
+        for (int i=0; i<7; i++) {
+            for (int j=0; j<7; j++) {
                 if(solucion[i][j]){
                     matrizDeLabels[i][j].setBackground(new Color(153,255,51, 45));
                 }else{
