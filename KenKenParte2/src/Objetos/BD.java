@@ -182,6 +182,14 @@ public class BD {
     }
     //Configuracion
     
+    public String extraerKenKenActual3x3(){
+        Random rand = new Random();
+        String nombre = "src/imagenes/";
+        
+        int numeroKenKen = rand.nextInt(3) + 1;
+        nombre+="E-"+Integer.toString(numeroKenKen)+"_in.png";
+        return nombre;
+    }
     /**
      * Genera una configuracion por defecto cuando se genera
      */
