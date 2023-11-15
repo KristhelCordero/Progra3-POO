@@ -186,8 +186,34 @@ public class BD {
         Random rand = new Random();
         String nombre = "src/imagenes/";
         
-        int numeroKenKen = rand.nextInt(3) + 1;
-        nombre+="E-"+Integer.toString(numeroKenKen)+"_in.png";
+        int numeroKenKen = rand.nextInt(2) + 1;
+        nombre+="3x3E-"+Integer.toString(numeroKenKen)+"_in.png";
+        return nombre;
+    }
+    
+    public String extraerKenKenActual4x4(){
+        Random rand = new Random();
+        String nombre = "src/imagenes/";
+        
+        int numeroKenKen = rand.nextInt(2) + 1;
+        switch (configuracion.getDificultad()) {
+            case 1 -> nombre+="4x4E-"+Integer.toString(numeroKenKen)+"_in.png";
+            case 2 -> nombre+="4x4H-"+Integer.toString(numeroKenKen)+"_in.png";
+            default -> nombre+="4x4D-"+Integer.toString(numeroKenKen)+"_in.png";
+        }
+        return nombre;
+    }
+    
+    public String extraerKenKenActual5x5(){
+        Random rand = new Random();
+        String nombre = "src/imagenes/";
+        
+        int numeroKenKen = rand.nextInt(2) + 1;
+        switch (configuracion.getDificultad()) {
+            case 1 -> nombre+="5x5E-"+Integer.toString(numeroKenKen)+"_in.png";
+            case 2 -> nombre+="5x5H-"+Integer.toString(numeroKenKen)+"_in.png";
+            default -> nombre+="5x5D-"+Integer.toString(numeroKenKen)+"_in.png";
+        }
         return nombre;
     }
     /**

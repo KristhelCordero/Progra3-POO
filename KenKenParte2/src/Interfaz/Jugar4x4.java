@@ -28,7 +28,7 @@ import javax.swing.Timer;
 public class Jugar4x4 extends javax.swing.JFrame {
     private JLabel[][] matrizDeLabels;
     private boolean iniciado, finalizadoTimer;
-    private final String kenken=bd.extraerKenKenActual();
+    private final String kenken=bd.extraerKenKenActual4x4();
     private Timer cronometro, timer;
     private int horas=bd.getConfiguracion().getTimer().getHora();
     private int minutos=bd.getConfiguracion().getTimer().getMinuto();
