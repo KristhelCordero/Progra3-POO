@@ -192,36 +192,64 @@ public class Jugar8x8 extends javax.swing.JFrame {
         matrizDeLabels[0][3]=jLabel_1_4;
         matrizDeLabels[0][4]=jLabel_1_5;
         matrizDeLabels[0][5]=jLabel_1_6;
+        matrizDeLabels[0][6]=jLabel_1_7;
+        matrizDeLabels[0][7]=jLabel_1_8;
         matrizDeLabels[1][0]=jLabel_2_1;
         matrizDeLabels[1][1]=jLabel_2_2;
         matrizDeLabels[1][2]=jLabel_2_3;
         matrizDeLabels[1][3]=jLabel_2_4;
         matrizDeLabels[1][4]=jLabel_2_5;
         matrizDeLabels[1][5]=jLabel_2_6;
+        matrizDeLabels[1][6]=jLabel_2_7;
+        matrizDeLabels[1][7]=jLabel_2_8;
         matrizDeLabels[2][0]=jLabel_3_1;
         matrizDeLabels[2][1]=jLabel_3_2;
         matrizDeLabels[2][2]=jLabel_3_3;
         matrizDeLabels[2][3]=jLabel_3_4;
         matrizDeLabels[2][4]=jLabel_3_5;
         matrizDeLabels[2][5]=jLabel_3_6;
+        matrizDeLabels[2][6]=jLabel_3_7;
+        matrizDeLabels[2][7]=jLabel_3_8;
         matrizDeLabels[3][0]=jLabel_4_1;
         matrizDeLabels[3][1]=jLabel_4_2;
         matrizDeLabels[3][2]=jLabel_4_3;
         matrizDeLabels[3][3]=jLabel_4_4;
         matrizDeLabels[3][4]=jLabel_4_5;
         matrizDeLabels[3][5]=jLabel_4_6;
+        matrizDeLabels[3][6]=jLabel_4_7;
+        matrizDeLabels[3][7]=jLabel_4_8;
         matrizDeLabels[4][0]=jLabel_5_1;
         matrizDeLabels[4][1]=jLabel_5_2;
         matrizDeLabels[4][2]=jLabel_5_3;
         matrizDeLabels[4][3]=jLabel_5_4;
         matrizDeLabels[4][4]=jLabel_5_5;
         matrizDeLabels[4][5]=jLabel_5_6;
+        matrizDeLabels[4][6]=jLabel_5_7;
+        matrizDeLabels[4][7]=jLabel_5_8;
         matrizDeLabels[5][0]=jLabel_6_1;
         matrizDeLabels[5][1]=jLabel_6_2;
         matrizDeLabels[5][2]=jLabel_6_3;
         matrizDeLabels[5][3]=jLabel_6_4;
         matrizDeLabels[5][4]=jLabel_6_5;
         matrizDeLabels[5][5]=jLabel_6_6;
+        matrizDeLabels[5][6]=jLabel_6_7;
+        matrizDeLabels[5][7]=jLabel_6_8;
+        matrizDeLabels[6][0]=jLabel_7_1;
+        matrizDeLabels[6][1]=jLabel_7_2;
+        matrizDeLabels[6][2]=jLabel_7_3;
+        matrizDeLabels[6][3]=jLabel_7_4;
+        matrizDeLabels[6][4]=jLabel_7_5;
+        matrizDeLabels[6][5]=jLabel_7_6;
+        matrizDeLabels[6][6]=jLabel_7_7;
+        matrizDeLabels[6][7]=jLabel_7_8;
+        matrizDeLabels[7][0]=jLabel_8_1;
+        matrizDeLabels[7][1]=jLabel_8_2;
+        matrizDeLabels[7][2]=jLabel_8_3;
+        matrizDeLabels[7][3]=jLabel_8_4;
+        matrizDeLabels[7][4]=jLabel_8_5;
+        matrizDeLabels[7][5]=jLabel_8_6;
+        matrizDeLabels[7][6]=jLabel_8_7;
+        matrizDeLabels[7][7]=jLabel_8_8;
     }
     
     /**
@@ -398,36 +426,64 @@ public class Jugar8x8 extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        jLabel_8_8 = new javax.swing.JLabel();
+        jLabel_8_7 = new javax.swing.JLabel();
+        jLabel_8_6 = new javax.swing.JLabel();
+        jLabel_8_5 = new javax.swing.JLabel();
+        jLabel_8_4 = new javax.swing.JLabel();
+        jLabel_8_3 = new javax.swing.JLabel();
+        jLabel_8_2 = new javax.swing.JLabel();
+        jLabel_8_1 = new javax.swing.JLabel();
+        jLabel_7_8 = new javax.swing.JLabel();
+        jLabel_7_7 = new javax.swing.JLabel();
+        jLabel_7_6 = new javax.swing.JLabel();
+        jLabel_7_5 = new javax.swing.JLabel();
+        jLabel_7_4 = new javax.swing.JLabel();
+        jLabel_7_3 = new javax.swing.JLabel();
+        jLabel_7_2 = new javax.swing.JLabel();
+        jLabel_7_1 = new javax.swing.JLabel();
+        jLabel_6_8 = new javax.swing.JLabel();
+        jLabel_6_7 = new javax.swing.JLabel();
         jLabel_6_6 = new javax.swing.JLabel();
         jLabel_6_5 = new javax.swing.JLabel();
         jLabel_6_4 = new javax.swing.JLabel();
         jLabel_6_3 = new javax.swing.JLabel();
         jLabel_6_2 = new javax.swing.JLabel();
         jLabel_6_1 = new javax.swing.JLabel();
+        jLabel_5_8 = new javax.swing.JLabel();
+        jLabel_5_7 = new javax.swing.JLabel();
         jLabel_5_6 = new javax.swing.JLabel();
         jLabel_5_5 = new javax.swing.JLabel();
         jLabel_5_4 = new javax.swing.JLabel();
         jLabel_5_3 = new javax.swing.JLabel();
         jLabel_5_2 = new javax.swing.JLabel();
         jLabel_5_1 = new javax.swing.JLabel();
+        jLabel_4_8 = new javax.swing.JLabel();
+        jLabel_4_7 = new javax.swing.JLabel();
         jLabel_4_6 = new javax.swing.JLabel();
         jLabel_4_5 = new javax.swing.JLabel();
         jLabel_4_4 = new javax.swing.JLabel();
         jLabel_4_3 = new javax.swing.JLabel();
         jLabel_4_2 = new javax.swing.JLabel();
         jLabel_4_1 = new javax.swing.JLabel();
+        jLabel_3_8 = new javax.swing.JLabel();
+        jLabel_3_7 = new javax.swing.JLabel();
         jLabel_3_6 = new javax.swing.JLabel();
         jLabel_3_5 = new javax.swing.JLabel();
         jLabel_3_4 = new javax.swing.JLabel();
         jLabel_3_3 = new javax.swing.JLabel();
         jLabel_3_2 = new javax.swing.JLabel();
         jLabel_3_1 = new javax.swing.JLabel();
+        jLabel_2_8 = new javax.swing.JLabel();
+        jLabel_2_7 = new javax.swing.JLabel();
         jLabel_2_6 = new javax.swing.JLabel();
         jLabel_2_5 = new javax.swing.JLabel();
         jLabel_2_4 = new javax.swing.JLabel();
         jLabel_2_3 = new javax.swing.JLabel();
         jLabel_2_2 = new javax.swing.JLabel();
         jLabel_2_1 = new javax.swing.JLabel();
+        jLabel_1_8 = new javax.swing.JLabel();
+        jLabel_1_7 = new javax.swing.JLabel();
         jLabel_1_6 = new javax.swing.JLabel();
         jLabel_1_5 = new javax.swing.JLabel();
         jLabel_1_4 = new javax.swing.JLabel();
@@ -461,6 +517,258 @@ public class Jugar8x8 extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel_8_8.setBackground(new java.awt.Color(209, 232, 239));
+        jLabel_8_8.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
+        jLabel_8_8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_8_8.setToolTipText("");
+        jLabel_8_8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel_8_8.setMaximumSize(new java.awt.Dimension(36, 16));
+        jLabel_8_8.setMinimumSize(new java.awt.Dimension(36, 16));
+        jLabel_8_8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel_8_8MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel_8_8, new org.netbeans.lib.awtextra.AbsoluteConstraints(618, 601, 76, 85));
+
+        jLabel_8_7.setBackground(new java.awt.Color(209, 232, 239));
+        jLabel_8_7.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
+        jLabel_8_7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_8_7.setToolTipText("");
+        jLabel_8_7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel_8_7.setMaximumSize(new java.awt.Dimension(36, 16));
+        jLabel_8_7.setMinimumSize(new java.awt.Dimension(36, 16));
+        jLabel_8_7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel_8_7MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel_8_7, new org.netbeans.lib.awtextra.AbsoluteConstraints(542, 601, 76, 85));
+
+        jLabel_8_6.setBackground(new java.awt.Color(209, 232, 239));
+        jLabel_8_6.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
+        jLabel_8_6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_8_6.setToolTipText("");
+        jLabel_8_6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel_8_6.setMaximumSize(new java.awt.Dimension(36, 16));
+        jLabel_8_6.setMinimumSize(new java.awt.Dimension(36, 16));
+        jLabel_8_6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel_8_6MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel_8_6, new org.netbeans.lib.awtextra.AbsoluteConstraints(465, 601, 76, 85));
+
+        jLabel_8_5.setBackground(new java.awt.Color(209, 232, 239));
+        jLabel_8_5.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
+        jLabel_8_5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_8_5.setToolTipText("");
+        jLabel_8_5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel_8_5.setMaximumSize(new java.awt.Dimension(36, 16));
+        jLabel_8_5.setMinimumSize(new java.awt.Dimension(36, 16));
+        jLabel_8_5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel_8_5MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel_8_5, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 601, 76, 85));
+
+        jLabel_8_4.setBackground(new java.awt.Color(209, 232, 239));
+        jLabel_8_4.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
+        jLabel_8_4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_8_4.setToolTipText("");
+        jLabel_8_4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel_8_4.setMaximumSize(new java.awt.Dimension(36, 16));
+        jLabel_8_4.setMinimumSize(new java.awt.Dimension(36, 16));
+        jLabel_8_4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel_8_4MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel_8_4, new org.netbeans.lib.awtextra.AbsoluteConstraints(314, 601, 76, 85));
+
+        jLabel_8_3.setBackground(new java.awt.Color(209, 232, 239));
+        jLabel_8_3.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
+        jLabel_8_3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_8_3.setToolTipText("");
+        jLabel_8_3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel_8_3.setMaximumSize(new java.awt.Dimension(36, 16));
+        jLabel_8_3.setMinimumSize(new java.awt.Dimension(36, 16));
+        jLabel_8_3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel_8_3MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel_8_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(237, 601, 76, 85));
+
+        jLabel_8_2.setBackground(new java.awt.Color(209, 232, 239));
+        jLabel_8_2.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
+        jLabel_8_2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_8_2.setToolTipText("");
+        jLabel_8_2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel_8_2.setMaximumSize(new java.awt.Dimension(36, 16));
+        jLabel_8_2.setMinimumSize(new java.awt.Dimension(36, 16));
+        jLabel_8_2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel_8_2MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel_8_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(162, 601, 76, 85));
+
+        jLabel_8_1.setBackground(new java.awt.Color(209, 232, 239));
+        jLabel_8_1.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
+        jLabel_8_1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_8_1.setToolTipText("");
+        jLabel_8_1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel_8_1.setMaximumSize(new java.awt.Dimension(36, 16));
+        jLabel_8_1.setMinimumSize(new java.awt.Dimension(36, 16));
+        jLabel_8_1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel_8_1MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel_8_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(85, 601, 76, 85));
+
+        jLabel_7_8.setBackground(new java.awt.Color(209, 232, 239));
+        jLabel_7_8.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
+        jLabel_7_8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_7_8.setToolTipText("");
+        jLabel_7_8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel_7_8.setMaximumSize(new java.awt.Dimension(36, 16));
+        jLabel_7_8.setMinimumSize(new java.awt.Dimension(36, 16));
+        jLabel_7_8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel_7_8MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel_7_8, new org.netbeans.lib.awtextra.AbsoluteConstraints(618, 516, 76, 85));
+
+        jLabel_7_7.setBackground(new java.awt.Color(209, 232, 239));
+        jLabel_7_7.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
+        jLabel_7_7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_7_7.setToolTipText("");
+        jLabel_7_7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel_7_7.setMaximumSize(new java.awt.Dimension(36, 16));
+        jLabel_7_7.setMinimumSize(new java.awt.Dimension(36, 16));
+        jLabel_7_7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel_7_7MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel_7_7, new org.netbeans.lib.awtextra.AbsoluteConstraints(542, 516, 76, 85));
+
+        jLabel_7_6.setBackground(new java.awt.Color(209, 232, 239));
+        jLabel_7_6.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
+        jLabel_7_6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_7_6.setToolTipText("");
+        jLabel_7_6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel_7_6.setMaximumSize(new java.awt.Dimension(36, 16));
+        jLabel_7_6.setMinimumSize(new java.awt.Dimension(36, 16));
+        jLabel_7_6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel_7_6MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel_7_6, new org.netbeans.lib.awtextra.AbsoluteConstraints(465, 516, 76, 85));
+
+        jLabel_7_5.setBackground(new java.awt.Color(209, 232, 239));
+        jLabel_7_5.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
+        jLabel_7_5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_7_5.setToolTipText("");
+        jLabel_7_5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel_7_5.setMaximumSize(new java.awt.Dimension(36, 16));
+        jLabel_7_5.setMinimumSize(new java.awt.Dimension(36, 16));
+        jLabel_7_5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel_7_5MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel_7_5, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 516, 76, 85));
+
+        jLabel_7_4.setBackground(new java.awt.Color(209, 232, 239));
+        jLabel_7_4.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
+        jLabel_7_4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_7_4.setToolTipText("");
+        jLabel_7_4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel_7_4.setMaximumSize(new java.awt.Dimension(36, 16));
+        jLabel_7_4.setMinimumSize(new java.awt.Dimension(36, 16));
+        jLabel_7_4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel_7_4MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel_7_4, new org.netbeans.lib.awtextra.AbsoluteConstraints(314, 516, 76, 85));
+
+        jLabel_7_3.setBackground(new java.awt.Color(209, 232, 239));
+        jLabel_7_3.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
+        jLabel_7_3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_7_3.setToolTipText("");
+        jLabel_7_3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel_7_3.setMaximumSize(new java.awt.Dimension(36, 16));
+        jLabel_7_3.setMinimumSize(new java.awt.Dimension(36, 16));
+        jLabel_7_3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel_7_3MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel_7_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(237, 516, 76, 85));
+
+        jLabel_7_2.setBackground(new java.awt.Color(209, 232, 239));
+        jLabel_7_2.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
+        jLabel_7_2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_7_2.setToolTipText("");
+        jLabel_7_2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel_7_2.setMaximumSize(new java.awt.Dimension(36, 16));
+        jLabel_7_2.setMinimumSize(new java.awt.Dimension(36, 16));
+        jLabel_7_2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel_7_2MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel_7_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(162, 516, 76, 85));
+
+        jLabel_7_1.setBackground(new java.awt.Color(209, 232, 239));
+        jLabel_7_1.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
+        jLabel_7_1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_7_1.setToolTipText("");
+        jLabel_7_1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel_7_1.setMaximumSize(new java.awt.Dimension(36, 16));
+        jLabel_7_1.setMinimumSize(new java.awt.Dimension(36, 16));
+        jLabel_7_1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel_7_1MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel_7_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(85, 516, 76, 85));
+
+        jLabel_6_8.setBackground(new java.awt.Color(209, 232, 239));
+        jLabel_6_8.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
+        jLabel_6_8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_6_8.setToolTipText("");
+        jLabel_6_8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel_6_8.setMaximumSize(new java.awt.Dimension(36, 16));
+        jLabel_6_8.setMinimumSize(new java.awt.Dimension(36, 16));
+        jLabel_6_8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel_6_8MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel_6_8, new org.netbeans.lib.awtextra.AbsoluteConstraints(618, 431, 76, 85));
+
+        jLabel_6_7.setBackground(new java.awt.Color(209, 232, 239));
+        jLabel_6_7.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
+        jLabel_6_7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_6_7.setToolTipText("");
+        jLabel_6_7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel_6_7.setMaximumSize(new java.awt.Dimension(36, 16));
+        jLabel_6_7.setMinimumSize(new java.awt.Dimension(36, 16));
+        jLabel_6_7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel_6_7MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel_6_7, new org.netbeans.lib.awtextra.AbsoluteConstraints(542, 431, 76, 85));
+
         jLabel_6_6.setBackground(new java.awt.Color(209, 232, 239));
         jLabel_6_6.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
         jLabel_6_6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -473,7 +781,7 @@ public class Jugar8x8 extends javax.swing.JFrame {
                 jLabel_6_6MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel_6_6, new org.netbeans.lib.awtextra.AbsoluteConstraints(588, 567, 100, 107));
+        jPanel1.add(jLabel_6_6, new org.netbeans.lib.awtextra.AbsoluteConstraints(465, 431, 76, 85));
 
         jLabel_6_5.setBackground(new java.awt.Color(209, 232, 239));
         jLabel_6_5.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
@@ -487,7 +795,7 @@ public class Jugar8x8 extends javax.swing.JFrame {
                 jLabel_6_5MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel_6_5, new org.netbeans.lib.awtextra.AbsoluteConstraints(486, 567, 100, 107));
+        jPanel1.add(jLabel_6_5, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 431, 76, 85));
 
         jLabel_6_4.setBackground(new java.awt.Color(209, 232, 239));
         jLabel_6_4.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
@@ -501,7 +809,7 @@ public class Jugar8x8 extends javax.swing.JFrame {
                 jLabel_6_4MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel_6_4, new org.netbeans.lib.awtextra.AbsoluteConstraints(384, 567, 100, 107));
+        jPanel1.add(jLabel_6_4, new org.netbeans.lib.awtextra.AbsoluteConstraints(314, 431, 76, 85));
 
         jLabel_6_3.setBackground(new java.awt.Color(209, 232, 239));
         jLabel_6_3.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
@@ -515,7 +823,7 @@ public class Jugar8x8 extends javax.swing.JFrame {
                 jLabel_6_3MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel_6_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(281, 567, 100, 107));
+        jPanel1.add(jLabel_6_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(237, 431, 76, 85));
 
         jLabel_6_2.setBackground(new java.awt.Color(209, 232, 239));
         jLabel_6_2.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
@@ -529,7 +837,7 @@ public class Jugar8x8 extends javax.swing.JFrame {
                 jLabel_6_2MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel_6_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(179, 567, 100, 107));
+        jPanel1.add(jLabel_6_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(162, 431, 76, 85));
 
         jLabel_6_1.setBackground(new java.awt.Color(209, 232, 239));
         jLabel_6_1.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
@@ -543,7 +851,35 @@ public class Jugar8x8 extends javax.swing.JFrame {
                 jLabel_6_1MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel_6_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 567, 100, 107));
+        jPanel1.add(jLabel_6_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(85, 431, 76, 85));
+
+        jLabel_5_8.setBackground(new java.awt.Color(209, 232, 239));
+        jLabel_5_8.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
+        jLabel_5_8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_5_8.setToolTipText("");
+        jLabel_5_8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel_5_8.setMaximumSize(new java.awt.Dimension(36, 16));
+        jLabel_5_8.setMinimumSize(new java.awt.Dimension(36, 16));
+        jLabel_5_8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel_5_8MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel_5_8, new org.netbeans.lib.awtextra.AbsoluteConstraints(618, 346, 76, 85));
+
+        jLabel_5_7.setBackground(new java.awt.Color(209, 232, 239));
+        jLabel_5_7.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
+        jLabel_5_7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_5_7.setToolTipText("");
+        jLabel_5_7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel_5_7.setMaximumSize(new java.awt.Dimension(36, 16));
+        jLabel_5_7.setMinimumSize(new java.awt.Dimension(36, 16));
+        jLabel_5_7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel_5_7MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel_5_7, new org.netbeans.lib.awtextra.AbsoluteConstraints(542, 346, 76, 85));
 
         jLabel_5_6.setBackground(new java.awt.Color(209, 232, 239));
         jLabel_5_6.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
@@ -557,7 +893,7 @@ public class Jugar8x8 extends javax.swing.JFrame {
                 jLabel_5_6MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel_5_6, new org.netbeans.lib.awtextra.AbsoluteConstraints(587, 458, 100, 107));
+        jPanel1.add(jLabel_5_6, new org.netbeans.lib.awtextra.AbsoluteConstraints(465, 346, 76, 85));
 
         jLabel_5_5.setBackground(new java.awt.Color(209, 232, 239));
         jLabel_5_5.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
@@ -571,7 +907,7 @@ public class Jugar8x8 extends javax.swing.JFrame {
                 jLabel_5_5MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel_5_5, new org.netbeans.lib.awtextra.AbsoluteConstraints(486, 458, 100, 107));
+        jPanel1.add(jLabel_5_5, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 346, 76, 85));
 
         jLabel_5_4.setBackground(new java.awt.Color(209, 232, 239));
         jLabel_5_4.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
@@ -585,7 +921,7 @@ public class Jugar8x8 extends javax.swing.JFrame {
                 jLabel_5_4MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel_5_4, new org.netbeans.lib.awtextra.AbsoluteConstraints(384, 458, 100, 107));
+        jPanel1.add(jLabel_5_4, new org.netbeans.lib.awtextra.AbsoluteConstraints(314, 346, 76, 85));
 
         jLabel_5_3.setBackground(new java.awt.Color(209, 232, 239));
         jLabel_5_3.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
@@ -599,7 +935,7 @@ public class Jugar8x8 extends javax.swing.JFrame {
                 jLabel_5_3MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel_5_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(282, 458, 100, 107));
+        jPanel1.add(jLabel_5_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(237, 346, 76, 85));
 
         jLabel_5_2.setBackground(new java.awt.Color(209, 232, 239));
         jLabel_5_2.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
@@ -613,7 +949,7 @@ public class Jugar8x8 extends javax.swing.JFrame {
                 jLabel_5_2MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel_5_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 458, 100, 107));
+        jPanel1.add(jLabel_5_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(162, 346, 76, 85));
 
         jLabel_5_1.setBackground(new java.awt.Color(209, 232, 239));
         jLabel_5_1.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
@@ -627,7 +963,35 @@ public class Jugar8x8 extends javax.swing.JFrame {
                 jLabel_5_1MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel_5_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 458, 100, 107));
+        jPanel1.add(jLabel_5_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(85, 346, 76, 85));
+
+        jLabel_4_8.setBackground(new java.awt.Color(209, 232, 239));
+        jLabel_4_8.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
+        jLabel_4_8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_4_8.setToolTipText("");
+        jLabel_4_8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel_4_8.setMaximumSize(new java.awt.Dimension(36, 16));
+        jLabel_4_8.setMinimumSize(new java.awt.Dimension(36, 16));
+        jLabel_4_8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel_4_8MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel_4_8, new org.netbeans.lib.awtextra.AbsoluteConstraints(618, 261, 76, 84));
+
+        jLabel_4_7.setBackground(new java.awt.Color(209, 232, 239));
+        jLabel_4_7.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
+        jLabel_4_7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_4_7.setToolTipText("");
+        jLabel_4_7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel_4_7.setMaximumSize(new java.awt.Dimension(36, 16));
+        jLabel_4_7.setMinimumSize(new java.awt.Dimension(36, 16));
+        jLabel_4_7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel_4_7MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel_4_7, new org.netbeans.lib.awtextra.AbsoluteConstraints(542, 261, 76, 84));
 
         jLabel_4_6.setBackground(new java.awt.Color(209, 232, 239));
         jLabel_4_6.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
@@ -641,7 +1005,7 @@ public class Jugar8x8 extends javax.swing.JFrame {
                 jLabel_4_6MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel_4_6, new org.netbeans.lib.awtextra.AbsoluteConstraints(587, 348, 100, 107));
+        jPanel1.add(jLabel_4_6, new org.netbeans.lib.awtextra.AbsoluteConstraints(465, 261, 76, 84));
 
         jLabel_4_5.setBackground(new java.awt.Color(209, 232, 239));
         jLabel_4_5.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
@@ -655,7 +1019,7 @@ public class Jugar8x8 extends javax.swing.JFrame {
                 jLabel_4_5MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel_4_5, new org.netbeans.lib.awtextra.AbsoluteConstraints(486, 348, 100, 107));
+        jPanel1.add(jLabel_4_5, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 261, 76, 84));
 
         jLabel_4_4.setBackground(new java.awt.Color(209, 232, 239));
         jLabel_4_4.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
@@ -669,7 +1033,7 @@ public class Jugar8x8 extends javax.swing.JFrame {
                 jLabel_4_4MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel_4_4, new org.netbeans.lib.awtextra.AbsoluteConstraints(383, 348, 100, 107));
+        jPanel1.add(jLabel_4_4, new org.netbeans.lib.awtextra.AbsoluteConstraints(314, 261, 76, 84));
 
         jLabel_4_3.setBackground(new java.awt.Color(209, 232, 239));
         jLabel_4_3.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
@@ -683,7 +1047,7 @@ public class Jugar8x8 extends javax.swing.JFrame {
                 jLabel_4_3MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel_4_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 348, 100, 107));
+        jPanel1.add(jLabel_4_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(237, 261, 76, 84));
 
         jLabel_4_2.setBackground(new java.awt.Color(209, 232, 239));
         jLabel_4_2.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
@@ -697,7 +1061,7 @@ public class Jugar8x8 extends javax.swing.JFrame {
                 jLabel_4_2MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel_4_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 348, 100, 107));
+        jPanel1.add(jLabel_4_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(162, 261, 76, 84));
 
         jLabel_4_1.setBackground(new java.awt.Color(209, 232, 239));
         jLabel_4_1.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
@@ -711,7 +1075,35 @@ public class Jugar8x8 extends javax.swing.JFrame {
                 jLabel_4_1MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel_4_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 348, 100, 107));
+        jPanel1.add(jLabel_4_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(85, 261, 76, 84));
+
+        jLabel_3_8.setBackground(new java.awt.Color(209, 232, 239));
+        jLabel_3_8.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
+        jLabel_3_8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_3_8.setToolTipText("");
+        jLabel_3_8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel_3_8.setMaximumSize(new java.awt.Dimension(36, 16));
+        jLabel_3_8.setMinimumSize(new java.awt.Dimension(36, 16));
+        jLabel_3_8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel_3_8MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel_3_8, new org.netbeans.lib.awtextra.AbsoluteConstraints(618, 175, 76, 85));
+
+        jLabel_3_7.setBackground(new java.awt.Color(209, 232, 239));
+        jLabel_3_7.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
+        jLabel_3_7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_3_7.setToolTipText("");
+        jLabel_3_7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel_3_7.setMaximumSize(new java.awt.Dimension(36, 16));
+        jLabel_3_7.setMinimumSize(new java.awt.Dimension(36, 16));
+        jLabel_3_7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel_3_7MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel_3_7, new org.netbeans.lib.awtextra.AbsoluteConstraints(542, 175, 76, 85));
 
         jLabel_3_6.setBackground(new java.awt.Color(209, 232, 239));
         jLabel_3_6.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
@@ -725,7 +1117,7 @@ public class Jugar8x8 extends javax.swing.JFrame {
                 jLabel_3_6MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel_3_6, new org.netbeans.lib.awtextra.AbsoluteConstraints(588, 239, 100, 107));
+        jPanel1.add(jLabel_3_6, new org.netbeans.lib.awtextra.AbsoluteConstraints(465, 175, 76, 85));
 
         jLabel_3_5.setBackground(new java.awt.Color(209, 232, 239));
         jLabel_3_5.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
@@ -739,7 +1131,7 @@ public class Jugar8x8 extends javax.swing.JFrame {
                 jLabel_3_5MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel_3_5, new org.netbeans.lib.awtextra.AbsoluteConstraints(485, 240, 100, 107));
+        jPanel1.add(jLabel_3_5, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 175, 76, 85));
 
         jLabel_3_4.setBackground(new java.awt.Color(209, 232, 239));
         jLabel_3_4.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
@@ -753,7 +1145,7 @@ public class Jugar8x8 extends javax.swing.JFrame {
                 jLabel_3_4MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel_3_4, new org.netbeans.lib.awtextra.AbsoluteConstraints(384, 240, 97, 107));
+        jPanel1.add(jLabel_3_4, new org.netbeans.lib.awtextra.AbsoluteConstraints(314, 175, 76, 85));
 
         jLabel_3_3.setBackground(new java.awt.Color(209, 232, 239));
         jLabel_3_3.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
@@ -767,7 +1159,7 @@ public class Jugar8x8 extends javax.swing.JFrame {
                 jLabel_3_3MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel_3_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(283, 239, 97, 107));
+        jPanel1.add(jLabel_3_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(237, 175, 76, 85));
 
         jLabel_3_2.setBackground(new java.awt.Color(209, 232, 239));
         jLabel_3_2.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
@@ -781,7 +1173,7 @@ public class Jugar8x8 extends javax.swing.JFrame {
                 jLabel_3_2MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel_3_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 239, 97, 107));
+        jPanel1.add(jLabel_3_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(162, 175, 76, 85));
 
         jLabel_3_1.setBackground(new java.awt.Color(209, 232, 239));
         jLabel_3_1.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
@@ -795,7 +1187,35 @@ public class Jugar8x8 extends javax.swing.JFrame {
                 jLabel_3_1MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel_3_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 239, 97, 107));
+        jPanel1.add(jLabel_3_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(85, 175, 76, 85));
+
+        jLabel_2_8.setBackground(new java.awt.Color(209, 232, 239));
+        jLabel_2_8.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
+        jLabel_2_8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_2_8.setToolTipText("");
+        jLabel_2_8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel_2_8.setMaximumSize(new java.awt.Dimension(36, 16));
+        jLabel_2_8.setMinimumSize(new java.awt.Dimension(36, 16));
+        jLabel_2_8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel_2_8MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel_2_8, new org.netbeans.lib.awtextra.AbsoluteConstraints(618, 90, 75, 85));
+
+        jLabel_2_7.setBackground(new java.awt.Color(209, 232, 239));
+        jLabel_2_7.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
+        jLabel_2_7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_2_7.setToolTipText("");
+        jLabel_2_7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel_2_7.setMaximumSize(new java.awt.Dimension(36, 16));
+        jLabel_2_7.setMinimumSize(new java.awt.Dimension(36, 16));
+        jLabel_2_7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel_2_7MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel_2_7, new org.netbeans.lib.awtextra.AbsoluteConstraints(542, 90, 75, 85));
 
         jLabel_2_6.setBackground(new java.awt.Color(209, 232, 239));
         jLabel_2_6.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
@@ -809,7 +1229,7 @@ public class Jugar8x8 extends javax.swing.JFrame {
                 jLabel_2_6MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel_2_6, new org.netbeans.lib.awtextra.AbsoluteConstraints(588, 130, 97, 107));
+        jPanel1.add(jLabel_2_6, new org.netbeans.lib.awtextra.AbsoluteConstraints(465, 90, 75, 85));
 
         jLabel_2_5.setBackground(new java.awt.Color(209, 232, 239));
         jLabel_2_5.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
@@ -823,7 +1243,7 @@ public class Jugar8x8 extends javax.swing.JFrame {
                 jLabel_2_5MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel_2_5, new org.netbeans.lib.awtextra.AbsoluteConstraints(486, 130, 100, 107));
+        jPanel1.add(jLabel_2_5, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 90, 76, 85));
 
         jLabel_2_4.setBackground(new java.awt.Color(209, 232, 239));
         jLabel_2_4.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
@@ -837,7 +1257,7 @@ public class Jugar8x8 extends javax.swing.JFrame {
                 jLabel_2_4MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel_2_4, new org.netbeans.lib.awtextra.AbsoluteConstraints(384, 130, 100, 107));
+        jPanel1.add(jLabel_2_4, new org.netbeans.lib.awtextra.AbsoluteConstraints(314, 90, 75, 85));
 
         jLabel_2_3.setBackground(new java.awt.Color(209, 232, 239));
         jLabel_2_3.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
@@ -851,7 +1271,7 @@ public class Jugar8x8 extends javax.swing.JFrame {
                 jLabel_2_3MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel_2_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 129, 100, 107));
+        jPanel1.add(jLabel_2_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(237, 90, 76, 85));
 
         jLabel_2_2.setBackground(new java.awt.Color(209, 232, 239));
         jLabel_2_2.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
@@ -865,7 +1285,7 @@ public class Jugar8x8 extends javax.swing.JFrame {
                 jLabel_2_2MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel_2_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 130, 97, 107));
+        jPanel1.add(jLabel_2_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(162, 90, 76, 85));
 
         jLabel_2_1.setBackground(new java.awt.Color(209, 232, 239));
         jLabel_2_1.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
@@ -879,7 +1299,35 @@ public class Jugar8x8 extends javax.swing.JFrame {
                 jLabel_2_1MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel_2_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 130, 97, 107));
+        jPanel1.add(jLabel_2_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(85, 90, 76, 85));
+
+        jLabel_1_8.setBackground(new java.awt.Color(209, 232, 239));
+        jLabel_1_8.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
+        jLabel_1_8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_1_8.setToolTipText("");
+        jLabel_1_8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel_1_8.setMaximumSize(new java.awt.Dimension(36, 16));
+        jLabel_1_8.setMinimumSize(new java.awt.Dimension(36, 16));
+        jLabel_1_8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel_1_8MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel_1_8, new org.netbeans.lib.awtextra.AbsoluteConstraints(618, 6, 76, 84));
+
+        jLabel_1_7.setBackground(new java.awt.Color(209, 232, 239));
+        jLabel_1_7.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
+        jLabel_1_7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_1_7.setToolTipText("");
+        jLabel_1_7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel_1_7.setMaximumSize(new java.awt.Dimension(36, 16));
+        jLabel_1_7.setMinimumSize(new java.awt.Dimension(36, 16));
+        jLabel_1_7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel_1_7MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel_1_7, new org.netbeans.lib.awtextra.AbsoluteConstraints(542, 6, 76, 84));
 
         jLabel_1_6.setBackground(new java.awt.Color(209, 232, 239));
         jLabel_1_6.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
@@ -893,7 +1341,7 @@ public class Jugar8x8 extends javax.swing.JFrame {
                 jLabel_1_6MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel_1_6, new org.netbeans.lib.awtextra.AbsoluteConstraints(588, 20, 97, 107));
+        jPanel1.add(jLabel_1_6, new org.netbeans.lib.awtextra.AbsoluteConstraints(465, 6, 76, 84));
 
         jLabel_1_5.setBackground(new java.awt.Color(209, 232, 239));
         jLabel_1_5.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
@@ -907,7 +1355,7 @@ public class Jugar8x8 extends javax.swing.JFrame {
                 jLabel_1_5MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel_1_5, new org.netbeans.lib.awtextra.AbsoluteConstraints(485, 20, 102, 107));
+        jPanel1.add(jLabel_1_5, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 6, 75, 84));
 
         jLabel_1_4.setBackground(new java.awt.Color(209, 232, 239));
         jLabel_1_4.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
@@ -921,7 +1369,7 @@ public class Jugar8x8 extends javax.swing.JFrame {
                 jLabel_1_4MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel_1_4, new org.netbeans.lib.awtextra.AbsoluteConstraints(384, 20, 100, 107));
+        jPanel1.add(jLabel_1_4, new org.netbeans.lib.awtextra.AbsoluteConstraints(314, 6, 75, 84));
 
         jLabel_1_3.setBackground(new java.awt.Color(209, 232, 239));
         jLabel_1_3.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
@@ -935,7 +1383,7 @@ public class Jugar8x8 extends javax.swing.JFrame {
                 jLabel_1_3MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel_1_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 20, 100, 107));
+        jPanel1.add(jLabel_1_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(237, 6, 76, 84));
 
         jLabel_1_2.setBackground(new java.awt.Color(209, 232, 239));
         jLabel_1_2.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
@@ -949,7 +1397,7 @@ public class Jugar8x8 extends javax.swing.JFrame {
                 jLabel_1_2MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel_1_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 20, 100, 107));
+        jPanel1.add(jLabel_1_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(162, 6, 75, 84));
 
         jLabel_1_1.setBackground(new java.awt.Color(209, 232, 239));
         jLabel_1_1.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
@@ -963,7 +1411,7 @@ public class Jugar8x8 extends javax.swing.JFrame {
                 jLabel_1_1MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel_1_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, 97, 107));
+        jPanel1.add(jLabel_1_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(85, 6, 75, 84));
 
         jLabelKenKen.setBackground(new java.awt.Color(190, 211, 179));
         jLabelKenKen.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
@@ -1739,6 +2187,174 @@ public class Jugar8x8 extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButton8ActionPerformed
 
+    private void jLabel_1_7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_1_7MouseClicked
+        desOpacarLabels();
+        jLabel_1_7.setOpaque(true);
+        this.repaint();
+    }//GEN-LAST:event_jLabel_1_7MouseClicked
+
+    private void jLabel_2_7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_2_7MouseClicked
+        desOpacarLabels();
+        jLabel_2_7.setOpaque(true);
+        this.repaint();
+    }//GEN-LAST:event_jLabel_2_7MouseClicked
+
+    private void jLabel_3_7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_3_7MouseClicked
+        desOpacarLabels();
+        jLabel_3_7.setOpaque(true);
+        this.repaint();
+    }//GEN-LAST:event_jLabel_3_7MouseClicked
+
+    private void jLabel_4_7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_4_7MouseClicked
+        desOpacarLabels();
+        jLabel_4_7.setOpaque(true);
+        this.repaint();
+    }//GEN-LAST:event_jLabel_4_7MouseClicked
+
+    private void jLabel_5_7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_5_7MouseClicked
+        desOpacarLabels();
+        jLabel_5_7.setOpaque(true);
+        this.repaint();
+    }//GEN-LAST:event_jLabel_5_7MouseClicked
+
+    private void jLabel_6_7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_6_7MouseClicked
+        desOpacarLabels();
+        jLabel_6_7.setOpaque(true);
+        this.repaint();
+    }//GEN-LAST:event_jLabel_6_7MouseClicked
+
+    private void jLabel_6_8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_6_8MouseClicked
+        desOpacarLabels();
+        jLabel_6_8.setOpaque(true);
+        this.repaint();
+    }//GEN-LAST:event_jLabel_6_8MouseClicked
+
+    private void jLabel_5_8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_5_8MouseClicked
+        desOpacarLabels();
+        jLabel_5_8.setOpaque(true);
+        this.repaint();
+    }//GEN-LAST:event_jLabel_5_8MouseClicked
+
+    private void jLabel_4_8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_4_8MouseClicked
+        desOpacarLabels();
+        jLabel_4_8.setOpaque(true);
+        this.repaint();
+    }//GEN-LAST:event_jLabel_4_8MouseClicked
+
+    private void jLabel_3_8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_3_8MouseClicked
+        desOpacarLabels();
+        jLabel_3_8.setOpaque(true);
+        this.repaint();
+    }//GEN-LAST:event_jLabel_3_8MouseClicked
+
+    private void jLabel_2_8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_2_8MouseClicked
+        desOpacarLabels();
+        jLabel_2_8.setOpaque(true);
+        this.repaint();
+    }//GEN-LAST:event_jLabel_2_8MouseClicked
+
+    private void jLabel_1_8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_1_8MouseClicked
+        desOpacarLabels();
+        jLabel_1_8.setOpaque(true);
+        this.repaint();
+    }//GEN-LAST:event_jLabel_1_8MouseClicked
+
+    private void jLabel_7_1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_7_1MouseClicked
+        desOpacarLabels();
+        jLabel_7_1.setOpaque(true);
+        this.repaint();
+    }//GEN-LAST:event_jLabel_7_1MouseClicked
+
+    private void jLabel_7_2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_7_2MouseClicked
+        desOpacarLabels();
+        jLabel_7_2.setOpaque(true);
+        this.repaint();
+    }//GEN-LAST:event_jLabel_7_2MouseClicked
+
+    private void jLabel_7_3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_7_3MouseClicked
+        desOpacarLabels();
+        jLabel_7_3.setOpaque(true);
+        this.repaint();
+    }//GEN-LAST:event_jLabel_7_3MouseClicked
+
+    private void jLabel_7_4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_7_4MouseClicked
+        desOpacarLabels();
+        jLabel_7_4.setOpaque(true);
+        this.repaint();
+    }//GEN-LAST:event_jLabel_7_4MouseClicked
+
+    private void jLabel_7_5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_7_5MouseClicked
+        desOpacarLabels();
+        jLabel_7_5.setOpaque(true);
+        this.repaint();
+    }//GEN-LAST:event_jLabel_7_5MouseClicked
+
+    private void jLabel_7_6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_7_6MouseClicked
+        desOpacarLabels();
+        jLabel_7_6.setOpaque(true);
+        this.repaint();
+    }//GEN-LAST:event_jLabel_7_6MouseClicked
+
+    private void jLabel_7_7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_7_7MouseClicked
+        desOpacarLabels();
+        jLabel_7_7.setOpaque(true);
+        this.repaint();
+    }//GEN-LAST:event_jLabel_7_7MouseClicked
+
+    private void jLabel_7_8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_7_8MouseClicked
+        desOpacarLabels();
+        jLabel_7_8.setOpaque(true);
+        this.repaint();
+    }//GEN-LAST:event_jLabel_7_8MouseClicked
+
+    private void jLabel_8_1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_8_1MouseClicked
+        desOpacarLabels();
+        jLabel_8_1.setOpaque(true);
+        this.repaint();
+    }//GEN-LAST:event_jLabel_8_1MouseClicked
+
+    private void jLabel_8_2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_8_2MouseClicked
+        desOpacarLabels();
+        jLabel_8_2.setOpaque(true);
+        this.repaint();
+    }//GEN-LAST:event_jLabel_8_2MouseClicked
+
+    private void jLabel_8_3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_8_3MouseClicked
+        desOpacarLabels();
+        jLabel_8_3.setOpaque(true);
+        this.repaint();
+    }//GEN-LAST:event_jLabel_8_3MouseClicked
+
+    private void jLabel_8_4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_8_4MouseClicked
+        desOpacarLabels();
+        jLabel_8_4.setOpaque(true);
+        this.repaint();
+    }//GEN-LAST:event_jLabel_8_4MouseClicked
+
+    private void jLabel_8_5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_8_5MouseClicked
+        desOpacarLabels();
+        jLabel_8_5.setOpaque(true);
+        this.repaint();
+    }//GEN-LAST:event_jLabel_8_5MouseClicked
+
+    private void jLabel_8_6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_8_6MouseClicked
+        desOpacarLabels();
+        jLabel_8_6.setOpaque(true);
+        this.repaint();
+    }//GEN-LAST:event_jLabel_8_6MouseClicked
+
+    private void jLabel_8_7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_8_7MouseClicked
+        desOpacarLabels();
+        jLabel_8_7.setOpaque(true);
+        this.repaint();
+    }//GEN-LAST:event_jLabel_8_7MouseClicked
+
+    private void jLabel_8_8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_8_8MouseClicked
+        desOpacarLabels();
+        jLabel_8_8.setOpaque(true);
+        this.repaint();
+    }//GEN-LAST:event_jLabel_8_8MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -1800,36 +2416,64 @@ public class Jugar8x8 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel_1_4;
     private javax.swing.JLabel jLabel_1_5;
     private javax.swing.JLabel jLabel_1_6;
+    private javax.swing.JLabel jLabel_1_7;
+    private javax.swing.JLabel jLabel_1_8;
     private javax.swing.JLabel jLabel_2_1;
     private javax.swing.JLabel jLabel_2_2;
     private javax.swing.JLabel jLabel_2_3;
     private javax.swing.JLabel jLabel_2_4;
     private javax.swing.JLabel jLabel_2_5;
     private javax.swing.JLabel jLabel_2_6;
+    private javax.swing.JLabel jLabel_2_7;
+    private javax.swing.JLabel jLabel_2_8;
     private javax.swing.JLabel jLabel_3_1;
     private javax.swing.JLabel jLabel_3_2;
     private javax.swing.JLabel jLabel_3_3;
     private javax.swing.JLabel jLabel_3_4;
     private javax.swing.JLabel jLabel_3_5;
     private javax.swing.JLabel jLabel_3_6;
+    private javax.swing.JLabel jLabel_3_7;
+    private javax.swing.JLabel jLabel_3_8;
     private javax.swing.JLabel jLabel_4_1;
     private javax.swing.JLabel jLabel_4_2;
     private javax.swing.JLabel jLabel_4_3;
     private javax.swing.JLabel jLabel_4_4;
     private javax.swing.JLabel jLabel_4_5;
     private javax.swing.JLabel jLabel_4_6;
+    private javax.swing.JLabel jLabel_4_7;
+    private javax.swing.JLabel jLabel_4_8;
     private javax.swing.JLabel jLabel_5_1;
     private javax.swing.JLabel jLabel_5_2;
     private javax.swing.JLabel jLabel_5_3;
     private javax.swing.JLabel jLabel_5_4;
     private javax.swing.JLabel jLabel_5_5;
     private javax.swing.JLabel jLabel_5_6;
+    private javax.swing.JLabel jLabel_5_7;
+    private javax.swing.JLabel jLabel_5_8;
     private javax.swing.JLabel jLabel_6_1;
     private javax.swing.JLabel jLabel_6_2;
     private javax.swing.JLabel jLabel_6_3;
     private javax.swing.JLabel jLabel_6_4;
     private javax.swing.JLabel jLabel_6_5;
     private javax.swing.JLabel jLabel_6_6;
+    private javax.swing.JLabel jLabel_6_7;
+    private javax.swing.JLabel jLabel_6_8;
+    private javax.swing.JLabel jLabel_7_1;
+    private javax.swing.JLabel jLabel_7_2;
+    private javax.swing.JLabel jLabel_7_3;
+    private javax.swing.JLabel jLabel_7_4;
+    private javax.swing.JLabel jLabel_7_5;
+    private javax.swing.JLabel jLabel_7_6;
+    private javax.swing.JLabel jLabel_7_7;
+    private javax.swing.JLabel jLabel_7_8;
+    private javax.swing.JLabel jLabel_8_1;
+    private javax.swing.JLabel jLabel_8_2;
+    private javax.swing.JLabel jLabel_8_3;
+    private javax.swing.JLabel jLabel_8_4;
+    private javax.swing.JLabel jLabel_8_5;
+    private javax.swing.JLabel jLabel_8_6;
+    private javax.swing.JLabel jLabel_8_7;
+    private javax.swing.JLabel jLabel_8_8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
