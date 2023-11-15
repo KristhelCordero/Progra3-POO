@@ -36,6 +36,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jButtonAyuda = new javax.swing.JButton();
         jButtonAcercaDe = new javax.swing.JButton();
         jButtonSalir = new javax.swing.JButton();
+        jButtonAcercaDe1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -100,6 +101,16 @@ public class MenuPrincipal extends javax.swing.JFrame {
             }
         });
 
+        jButtonAcercaDe1.setBackground(new java.awt.Color(76, 96, 65));
+        jButtonAcercaDe1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jButtonAcercaDe1.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonAcercaDe1.setText("Podio");
+        jButtonAcercaDe1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonAcercaDe1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -111,10 +122,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
                     .addComponent(jButtonConfigurar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButtonJugar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButtonAcercaDe, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 225, Short.MAX_VALUE)
-                    .addComponent(jButtonSalir, javax.swing.GroupLayout.DEFAULT_SIZE, 225, Short.MAX_VALUE))
+                    .addComponent(jButtonSalir, javax.swing.GroupLayout.DEFAULT_SIZE, 225, Short.MAX_VALUE)
+                    .addComponent(jButtonAcercaDe1, javax.swing.GroupLayout.DEFAULT_SIZE, 225, Short.MAX_VALUE))
                 .addContainerGap(135, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(52, Short.MAX_VALUE)
                 .addComponent(jLabel2)
                 .addGap(39, 39, 39))
         );
@@ -123,15 +135,17 @@ public class MenuPrincipal extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(39, 39, 39)
                 .addComponent(jLabel2)
-                .addGap(50, 50, 50)
+                .addGap(28, 28, 28)
                 .addComponent(jButtonJugar, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(67, 67, 67)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
                 .addComponent(jButtonConfigurar, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 70, Short.MAX_VALUE)
+                .addGap(52, 52, 52)
                 .addComponent(jButtonAyuda, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(71, 71, 71)
+                .addGap(58, 58, 58)
                 .addComponent(jButtonAcercaDe, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(64, 64, 64)
+                .addGap(48, 48, 48)
+                .addComponent(jButtonAcercaDe1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(48, 48, 48)
                 .addComponent(jButtonSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(59, 59, 59))
         );
@@ -200,6 +214,10 @@ public class MenuPrincipal extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_jButtonAcercaDeActionPerformed
 
+    private void jButtonAcercaDe1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAcercaDe1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonAcercaDe1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -237,6 +255,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonAcercaDe;
+    private javax.swing.JButton jButtonAcercaDe1;
     private javax.swing.JButton jButtonAyuda;
     private javax.swing.JButton jButtonConfigurar;
     private javax.swing.JButton jButtonJugar;
