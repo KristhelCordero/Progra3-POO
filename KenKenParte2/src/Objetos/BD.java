@@ -186,7 +186,7 @@ public class BD {
         Random rand = new Random();
         String nombre = "src/imagenes/";
         
-        int numeroKenKen = rand.nextInt(2) + 1;
+        int numeroKenKen = rand.nextInt(3) + 1;
         nombre+="3x3E-"+Integer.toString(numeroKenKen)+"_in.png";
         return nombre;
     }
@@ -213,6 +213,45 @@ public class BD {
             case 1 -> nombre+="5x5E-"+Integer.toString(numeroKenKen)+"_in.png";
             case 2 -> nombre+="5x5H-"+Integer.toString(numeroKenKen)+"_in.png";
             default -> nombre+="5x5D-"+Integer.toString(numeroKenKen)+"_in.png";
+        }
+        return nombre;
+    }
+    
+    public String extraerKenKenActual7x7(){
+        Random rand = new Random();
+        String nombre = "src/imagenes/";
+        
+        int numeroKenKen = rand.nextInt(2) + 1;
+        switch (configuracion.getDificultad()) {
+            case 1 -> nombre+="7x7E-"+Integer.toString(numeroKenKen)+"_in.png";
+            case 2 -> nombre+="7x7H-"+Integer.toString(numeroKenKen)+"_in.png";
+            default -> nombre+="7x7D-"+Integer.toString(numeroKenKen)+"_in.png";
+        }
+        return nombre;
+    }
+    
+    public String extraerKenKenActual8x8(){
+        Random rand = new Random();
+        String nombre = "src/imagenes/";
+        
+        int numeroKenKen = rand.nextInt(2) + 1;
+        switch (configuracion.getDificultad()) {
+            case 1 -> nombre+="8x8E-"+Integer.toString(numeroKenKen)+"_in.png";
+            case 2 -> nombre+="8x8H-"+Integer.toString(numeroKenKen)+"_in.png";
+            default -> nombre+="8x8D-"+Integer.toString(numeroKenKen)+"_in.png";
+        }
+        return nombre;
+    }
+    
+    public String extraerKenKenActual9x9(){
+        Random rand = new Random();
+        String nombre = "src/imagenes/";
+        
+        int numeroKenKen = rand.nextInt(2) + 1;
+        switch (configuracion.getDificultad()) {
+            case 1 -> nombre+="9x9E-"+Integer.toString(numeroKenKen)+"_in.png";
+            case 2 -> nombre+="9x9H-"+Integer.toString(numeroKenKen)+"_in.png";
+            default -> nombre+="9x9D-"+Integer.toString(numeroKenKen)+"_in.png";
         }
         return nombre;
     }

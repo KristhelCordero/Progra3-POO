@@ -28,7 +28,7 @@ import javax.swing.Timer;
 public class Jugar7x7 extends javax.swing.JFrame {
     private JLabel[][] matrizDeLabels;
     private boolean iniciado, finalizadoTimer;
-    private final String kenken=bd.extraerKenKenActual();
+    private final String kenken=bd.extraerKenKenActual7x7();
     private Timer cronometro, timer;
     private int horas=bd.getConfiguracion().getTimer().getHora();
     private int minutos=bd.getConfiguracion().getTimer().getMinuto();
@@ -192,49 +192,50 @@ public class Jugar7x7 extends javax.swing.JFrame {
         matrizDeLabels[0][3]=jLabel_1_4;
         matrizDeLabels[0][4]=jLabel_1_5;
         matrizDeLabels[0][5]=jLabel_1_6;
-        matrizDeLabels[0][6]=jLabel_1_6;
+        matrizDeLabels[0][6]=jLabel_1_7;
         matrizDeLabels[1][0]=jLabel_2_1;
         matrizDeLabels[1][1]=jLabel_2_2;
         matrizDeLabels[1][2]=jLabel_2_3;
         matrizDeLabels[1][3]=jLabel_2_4;
         matrizDeLabels[1][4]=jLabel_2_5;
         matrizDeLabels[1][5]=jLabel_2_6;
-        matrizDeLabels[1][6]=jLabel_2_6;
+        matrizDeLabels[1][6]=jLabel_2_7;
         matrizDeLabels[2][0]=jLabel_3_1;
         matrizDeLabels[2][1]=jLabel_3_2;
         matrizDeLabels[2][2]=jLabel_3_3;
         matrizDeLabels[2][3]=jLabel_3_4;
         matrizDeLabels[2][4]=jLabel_3_5;
         matrizDeLabels[2][5]=jLabel_3_6;
-        matrizDeLabels[2][6]=jLabel_3_6;
+        matrizDeLabels[2][6]=jLabel_3_7;
         matrizDeLabels[3][0]=jLabel_4_1;
         matrizDeLabels[3][1]=jLabel_4_2;
         matrizDeLabels[3][2]=jLabel_4_3;
         matrizDeLabels[3][3]=jLabel_4_4;
         matrizDeLabels[3][4]=jLabel_4_5;
         matrizDeLabels[3][5]=jLabel_4_6;
-        matrizDeLabels[3][6]=jLabel_4_6;
+        matrizDeLabels[3][6]=jLabel_4_7;
         matrizDeLabels[4][0]=jLabel_5_1;
         matrizDeLabels[4][1]=jLabel_5_2;
         matrizDeLabels[4][2]=jLabel_5_3;
         matrizDeLabels[4][3]=jLabel_5_4;
         matrizDeLabels[4][4]=jLabel_5_5;
         matrizDeLabels[4][5]=jLabel_5_6;
-        matrizDeLabels[4][6]=jLabel_5_6;
+        matrizDeLabels[4][6]=jLabel_5_7;
         matrizDeLabels[5][0]=jLabel_6_1;
         matrizDeLabels[5][1]=jLabel_6_2;
         matrizDeLabels[5][2]=jLabel_6_3;
         matrizDeLabels[5][3]=jLabel_6_4;
         matrizDeLabels[5][4]=jLabel_6_5;
         matrizDeLabels[5][5]=jLabel_6_6;
-        matrizDeLabels[5][6]=jLabel_6_6;
-        matrizDeLabels[6][0]=jLabel_6_1;
-        matrizDeLabels[6][1]=jLabel_6_2;
-        matrizDeLabels[6][2]=jLabel_6_3;
-        matrizDeLabels[6][3]=jLabel_6_4;
-        matrizDeLabels[6][4]=jLabel_6_5;
-        matrizDeLabels[6][5]=jLabel_6_6;
-        matrizDeLabels[6][6]=jLabel_6_6;
+        matrizDeLabels[5][6]=jLabel_6_7;
+        matrizDeLabels[6][0]=jLabel_7_1;
+        matrizDeLabels[6][1]=jLabel_7_2;
+        matrizDeLabels[6][2]=jLabel_7_3;
+        matrizDeLabels[6][3]=jLabel_7_4;
+        matrizDeLabels[6][4]=jLabel_7_5;
+        matrizDeLabels[6][5]=jLabel_7_6;
+        matrizDeLabels[6][6]=jLabel_7_7;
+        
     }
     
     /**
@@ -417,7 +418,7 @@ public class Jugar7x7 extends javax.swing.JFrame {
         jLabel_7_4 = new javax.swing.JLabel();
         jLabel_7_5 = new javax.swing.JLabel();
         jLabel_7_6 = new javax.swing.JLabel();
-        jLabel_6_14 = new javax.swing.JLabel();
+        jLabel_7_7 = new javax.swing.JLabel();
         jLabel_6_7 = new javax.swing.JLabel();
         jLabel_6_6 = new javax.swing.JLabel();
         jLabel_6_5 = new javax.swing.JLabel();
@@ -470,7 +471,7 @@ public class Jugar7x7 extends javax.swing.JFrame {
         jButton6 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButtonBorrador = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
         jButtonIniciarJuego = new javax.swing.JButton();
         jButtonOtroJuego = new javax.swing.JButton();
         jButtonTerminarJuego = new javax.swing.JButton();
@@ -570,19 +571,19 @@ public class Jugar7x7 extends javax.swing.JFrame {
         });
         jPanel1.add(jLabel_7_6, new org.netbeans.lib.awtextra.AbsoluteConstraints(523, 589, 88, 96));
 
-        jLabel_6_14.setBackground(new java.awt.Color(209, 232, 239));
-        jLabel_6_14.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
-        jLabel_6_14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel_6_14.setToolTipText("");
-        jLabel_6_14.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jLabel_6_14.setMaximumSize(new java.awt.Dimension(36, 16));
-        jLabel_6_14.setMinimumSize(new java.awt.Dimension(36, 16));
-        jLabel_6_14.addMouseListener(new java.awt.event.MouseAdapter() {
+        jLabel_7_7.setBackground(new java.awt.Color(209, 232, 239));
+        jLabel_7_7.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
+        jLabel_7_7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_7_7.setToolTipText("");
+        jLabel_7_7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel_7_7.setMaximumSize(new java.awt.Dimension(36, 16));
+        jLabel_7_7.setMinimumSize(new java.awt.Dimension(36, 16));
+        jLabel_7_7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel_6_14MouseClicked(evt);
+                jLabel_7_7MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel_6_14, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 589, 88, 96));
+        jPanel1.add(jLabel_7_7, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 589, 88, 96));
 
         jLabel_6_7.setBackground(new java.awt.Color(209, 232, 239));
         jLabel_6_7.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
@@ -1260,14 +1261,14 @@ public class Jugar7x7 extends javax.swing.JFrame {
             }
         });
 
-        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagenesBotones/7.png"))); // NOI18N
-        jButton8.setBorder(null);
-        jButton8.setContentAreaFilled(false);
-        jButton8.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jButton8.setPreferredSize(new java.awt.Dimension(40, 40));
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagenesBotones/7.png"))); // NOI18N
+        jButton7.setBorder(null);
+        jButton7.setContentAreaFilled(false);
+        jButton7.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jButton7.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
+                jButton7ActionPerformed(evt);
             }
         });
 
@@ -1289,7 +1290,7 @@ public class Jugar7x7 extends javax.swing.JFrame {
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel4Layout.createSequentialGroup()
                                 .addGap(92, 92, 92)
-                                .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addGroup(jPanel4Layout.createSequentialGroup()
                                     .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1314,7 +1315,7 @@ public class Jugar7x7 extends javax.swing.JFrame {
                     .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButtonBorrador, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11))
@@ -1920,60 +1921,88 @@ public class Jugar7x7 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonRedoActionPerformed
 
     private void jLabel_1_7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_1_7MouseClicked
-        // TODO add your handling code here:
+        desOpacarLabels();
+        jLabel_1_7.setOpaque(true);
+        this.repaint();
     }//GEN-LAST:event_jLabel_1_7MouseClicked
 
     private void jLabel_2_7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_2_7MouseClicked
-        // TODO add your handling code here:
+        desOpacarLabels();
+        jLabel_2_7.setOpaque(true);
+        this.repaint();
     }//GEN-LAST:event_jLabel_2_7MouseClicked
 
     private void jLabel_6_7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_6_7MouseClicked
-        // TODO add your handling code here:
+        desOpacarLabels();
+        jLabel_6_7.setOpaque(true);
+        this.repaint();
     }//GEN-LAST:event_jLabel_6_7MouseClicked
 
     private void jLabel_5_7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_5_7MouseClicked
-        // TODO add your handling code here:
+        desOpacarLabels();
+        jLabel_5_7.setOpaque(true);
+        this.repaint();
     }//GEN-LAST:event_jLabel_5_7MouseClicked
 
     private void jLabel_4_7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_4_7MouseClicked
-        // TODO add your handling code here:
+        desOpacarLabels();
+        jLabel_4_7.setOpaque(true);
+        this.repaint();
     }//GEN-LAST:event_jLabel_4_7MouseClicked
 
     private void jLabel_3_7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_3_7MouseClicked
-        // TODO add your handling code here:
+        desOpacarLabels();
+        jLabel_3_7.setOpaque(true);
+        this.repaint();
     }//GEN-LAST:event_jLabel_3_7MouseClicked
 
     private void jLabel_7_1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_7_1MouseClicked
-        // TODO add your handling code here:
+        desOpacarLabels();
+        jLabel_7_1.setOpaque(true);
+        this.repaint();
     }//GEN-LAST:event_jLabel_7_1MouseClicked
 
     private void jLabel_7_2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_7_2MouseClicked
-        // TODO add your handling code here:
+        desOpacarLabels();
+        jLabel_7_2.setOpaque(true);
+        this.repaint();
     }//GEN-LAST:event_jLabel_7_2MouseClicked
 
     private void jLabel_7_3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_7_3MouseClicked
-        // TODO add your handling code here:
+        desOpacarLabels();
+        jLabel_7_3.setOpaque(true);
+        this.repaint();
     }//GEN-LAST:event_jLabel_7_3MouseClicked
 
     private void jLabel_7_4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_7_4MouseClicked
-        // TODO add your handling code here:
+        desOpacarLabels();
+        jLabel_7_4.setOpaque(true);
+        this.repaint();
     }//GEN-LAST:event_jLabel_7_4MouseClicked
 
     private void jLabel_7_5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_7_5MouseClicked
-        // TODO add your handling code here:
+        desOpacarLabels();
+        jLabel_7_5.setOpaque(true);
+        this.repaint();
     }//GEN-LAST:event_jLabel_7_5MouseClicked
 
     private void jLabel_7_6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_7_6MouseClicked
-        // TODO add your handling code here:
+        desOpacarLabels();
+        jLabel_7_6.setOpaque(true);
+        this.repaint();
     }//GEN-LAST:event_jLabel_7_6MouseClicked
 
-    private void jLabel_6_14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_6_14MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel_6_14MouseClicked
+    private void jLabel_7_7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_7_7MouseClicked
+        desOpacarLabels();
+        jLabel_7_7.setOpaque(true);
+        this.repaint();
+    }//GEN-LAST:event_jLabel_7_7MouseClicked
 
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton8ActionPerformed
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        if (validarCondiciones()){
+            introducirNumeroEnCasilla(7);
+        }
+    }//GEN-LAST:event_jButton7ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -2018,7 +2047,7 @@ public class Jugar7x7 extends javax.swing.JFrame {
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton7;
     private javax.swing.JButton jButtonBorrador;
     private javax.swing.JButton jButtonIniciarJuego;
     private javax.swing.JButton jButtonOtroJuego;
@@ -2065,7 +2094,6 @@ public class Jugar7x7 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel_5_6;
     private javax.swing.JLabel jLabel_5_7;
     private javax.swing.JLabel jLabel_6_1;
-    private javax.swing.JLabel jLabel_6_14;
     private javax.swing.JLabel jLabel_6_2;
     private javax.swing.JLabel jLabel_6_3;
     private javax.swing.JLabel jLabel_6_4;
@@ -2078,6 +2106,7 @@ public class Jugar7x7 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel_7_4;
     private javax.swing.JLabel jLabel_7_5;
     private javax.swing.JLabel jLabel_7_6;
+    private javax.swing.JLabel jLabel_7_7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;

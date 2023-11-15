@@ -28,7 +28,7 @@ import javax.swing.Timer;
 public class Jugar8x8 extends javax.swing.JFrame {
     private JLabel[][] matrizDeLabels;
     private boolean iniciado, finalizadoTimer;
-    private final String kenken=bd.extraerKenKenActual();
+    private final String kenken=bd.extraerKenKenActual8x8();
     private Timer cronometro, timer;
     private int horas=bd.getConfiguracion().getTimer().getHora();
     private int minutos=bd.getConfiguracion().getTimer().getMinuto();
@@ -44,7 +44,7 @@ public class Jugar8x8 extends javax.swing.JFrame {
         jButtonTerminarJuego.setEnabled(false);
         jButtonReiniciarJuego.setEnabled(false);
         jButtonOtroJuego.setEnabled(false);
-        matrizDeLabels= new JLabel[6][6];
+        matrizDeLabels= new JLabel[8][8];
         this.crearMatrizLabels();
         this.definirColorLabels();
         this.setLocationRelativeTo(this);
@@ -231,8 +231,8 @@ public class Jugar8x8 extends javax.swing.JFrame {
      */
     public void introducirNumeroEnCasilla(int num) {
         String texto;
-        for (int i=0;i<6;i++) {
-            for (int j=0;j<6;j++) {
+        for (int i=0;i<8;i++) {
+            for (int j=0;j<8;j++) {
                 if (matrizDeLabels[i][j].isOpaque()) {
                     texto=matrizDeLabels[i][j].getText();
                     bd.annadirAccionEscribir(i, j, texto);
@@ -268,8 +268,8 @@ public class Jugar8x8 extends javax.swing.JFrame {
      */
     public void borrarNumero(){
         String texto="";
-        for (int i=0;i<6;i++) {
-            for (int j=0;j<6;j++) {
+        for (int i=0;i<8;i++) {
+            for (int j=0;j<8;j++) {
                 if (matrizDeLabels[i][j].isOpaque()) {
                     texto=matrizDeLabels[i][j].getText();
                     bd.annadirAccionBorrar(i, j, texto);
@@ -376,8 +376,8 @@ public class Jugar8x8 extends javax.swing.JFrame {
      * @param solucion
      */
     public void validarKenKen(boolean[][] solucion){
-        for (int i=0; i<6; i++) {
-            for (int j=0; j<6; j++) {
+        for (int i=0; i<8; i++) {
+            for (int j=0; j<8; j++) {
                 if(solucion[i][j]){
                     matrizDeLabels[i][j].setBackground(new Color(153,255,51, 45));
                 }else{
@@ -444,6 +444,8 @@ public class Jugar8x8 extends javax.swing.JFrame {
         jButton6 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButtonBorrador = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
         jButtonIniciarJuego = new javax.swing.JButton();
         jButtonOtroJuego = new javax.swing.JButton();
         jButtonTerminarJuego = new javax.swing.JButton();
@@ -965,7 +967,7 @@ public class Jugar8x8 extends javax.swing.JFrame {
 
         jLabelKenKen.setBackground(new java.awt.Color(190, 211, 179));
         jLabelKenKen.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
-        jLabelKenKen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/E-1_in.png"))); // NOI18N
+        jLabelKenKen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/8x8E-1_in.png"))); // NOI18N
         jLabelKenKen.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jPanel1.add(jLabelKenKen, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 770, 690));
 
@@ -1051,6 +1053,28 @@ public class Jugar8x8 extends javax.swing.JFrame {
             }
         });
 
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagenesBotones/7.png"))); // NOI18N
+        jButton7.setBorder(null);
+        jButton7.setContentAreaFilled(false);
+        jButton7.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jButton7.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+
+        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagenesBotones/8.png"))); // NOI18N
+        jButton8.setBorder(null);
+        jButton8.setContentAreaFilled(false);
+        jButton8.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jButton8.setPreferredSize(new java.awt.Dimension(40, 40));
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
@@ -1066,14 +1090,20 @@ public class Jugar8x8 extends javax.swing.JFrame {
                         .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGap(27, 27, 27)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel4Layout.createSequentialGroup()
-                                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(43, 43, 43)
+                                .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jButtonBorrador, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addGroup(jPanel4Layout.createSequentialGroup()
+                                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jButtonBorrador, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
@@ -1089,9 +1119,13 @@ public class Jugar8x8 extends javax.swing.JFrame {
                     .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButtonBorrador, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 23, Short.MAX_VALUE))
+                .addGap(12, 12, 12))
         );
 
         jButtonIniciarJuego.setBackground(new java.awt.Color(190, 211, 179));
@@ -1234,14 +1268,14 @@ public class Jugar8x8 extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(34, 34, 34)
                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
+                .addGap(19, 19, 19)
+                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jButtonUndo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButtonRedo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButtonReiniciarJuego, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(24, 24, 24)
+                .addGap(18, 18, 18)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButtonValidarJuego, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButtonIniciarJuego, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -1249,7 +1283,7 @@ public class Jugar8x8 extends javax.swing.JFrame {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jButtonOtroJuego, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButtonTerminarJuego, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(49, 49, 49))
+                .addGap(16, 16, 16))
         );
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 0, 370, 690));
@@ -1693,6 +1727,18 @@ public class Jugar8x8 extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButtonRedoActionPerformed
 
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        if (validarCondiciones()){
+            introducirNumeroEnCasilla(7);
+        }
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        if (validarCondiciones()){
+            introducirNumeroEnCasilla(8);
+        }
+    }//GEN-LAST:event_jButton8ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1736,6 +1782,8 @@ public class Jugar8x8 extends javax.swing.JFrame {
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
     private javax.swing.JButton jButtonBorrador;
     private javax.swing.JButton jButtonIniciarJuego;
     private javax.swing.JButton jButtonOtroJuego;
