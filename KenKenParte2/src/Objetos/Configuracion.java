@@ -18,7 +18,7 @@ public class Configuracion implements Serializable{
     int tamanno; //3-9: Tamaño de la cuadrícula
 
     /**
-     * Constructor de configuracion
+     * Constructor de configuración
      * @param posicion
      * @param sonido
      * @param dificultad
