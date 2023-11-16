@@ -24,13 +24,12 @@ public class Configuracion implements Serializable{
      * @param dificultad
      * @param reloj
      */
-    public Configuracion(boolean posicion, boolean sonido, int dificultad, int reloj, int tamanno) {
+    public Configuracion(boolean posicion, boolean sonido, int dificultad, int reloj) {
         this.posicionBarra = posicion;
         this.sonido = sonido;
         this.dificultad = dificultad;
         this.reloj = reloj;
         this.timer.resetearTimer();
-        this.tamanno = tamanno;
     }
 
     /**
@@ -41,12 +40,13 @@ public class Configuracion implements Serializable{
      * @param reloj
      * @param timer
      */
-    public Configuracion(boolean posicion, boolean sonido, int dificultad, int reloj, Timer timer) {
+    public Configuracion(boolean posicion, boolean sonido, int dificultad, int reloj, Timer timer, int tamanno) {
         this.posicionBarra = posicion;
         this.sonido = sonido;
         this.dificultad = dificultad;
         this.reloj = reloj;
         this.timer= timer;
+        this.tamanno = tamanno;
     }
 
     /**
