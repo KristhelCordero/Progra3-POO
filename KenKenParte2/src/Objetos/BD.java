@@ -3,6 +3,7 @@ package Objetos;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 import javax.xml.parsers.DocumentBuilder;
@@ -109,6 +110,7 @@ public class BD {
                 //System.out.println("Se evalua el nodo"+nieto.getNodeName());
                 if("codigo".equals(nieto.getNodeName())){
                     kenken.setNombre(nieto.getTextContent());
+                    kenken.actualizarDimension();
                 }
                 if("nivelDificultad".equals(nieto.getNodeName())){
                     kenken.setDificultad(
@@ -129,12 +131,12 @@ public class BD {
     /**
      * Toma el archivo XML y saca la lista de KenKen de él
      */
-    public void extraerXMLListaKenKen(){
+    public void extraerXMLListaKenKen(String xml){
         //String dirXMl=KenKen\kenken.xml;
         try{
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = factory.newDocumentBuilder();
-            Document documento = builder.parse(new File("kenken.xml"));
+            Document documento = builder.parse(new File(xml));
             
             NodeList listaPartidas = documento.getElementsByTagName("KenKen");
             for (int i=0; i < listaPartidas.getLength() ; i++){
@@ -159,6 +161,16 @@ public class BD {
             }
         }catch(ParserConfigurationException | SAXException | IOException ex){
             System.out.println("No se pudo leer el XML");
+        }
+    }
+
+
+    public void extraerTodosLosXML(){
+        List<String> sXML = Arrays.asList("kenken3x3.xml", "kenken4x4.xml", "kenken5x5.xml",
+         "kenken6x6.xml", "kenken7x7.xml", "kenken8x8.xml", "kenken9x9.xml");
+
+        for (String nombreXML:sXML){
+            extraerXMLListaKenKen(nombreXML);
         }
     }
     

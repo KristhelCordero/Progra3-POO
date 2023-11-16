@@ -13,6 +13,7 @@ import javax.swing.JLabel;
 public class KenKen {
     String nombre;
     int dificultad;
+    int dimension;
     //String rutaImagen; //ruta a la imagen del Ken Ken
     int[][]solucion = new int[9][9];
 
@@ -72,7 +73,24 @@ public class KenKen {
     public void setSolucion(int[][] solucion) {
         this.solucion = solucion;
     }
+
+    public int getDimension() {
+        return dimension;
+    }
+
+    public void setDimension(int dimension) {
+        this.dimension = dimension;
+    }
     
+    
+    public void actualizarDimension(){
+        String[] partes = nombre.split("x");
+        if (partes.length > 0) {
+            setDimension(Integer.parseInt(partes[0]));
+        } else {
+            System.out.println("No se encontró ningún número.");
+        }
+    }
     /**
      * imprime todos los datos de un KenKen
      */
