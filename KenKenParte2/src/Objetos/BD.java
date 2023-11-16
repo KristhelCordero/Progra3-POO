@@ -1,4 +1,3 @@
-
 package Objetos;
 
 import java.io.File;
@@ -27,6 +26,7 @@ public class BD {
     List<KenKen> listaKenKen = new ArrayList<>();
     PilaAcciones acciones=new PilaAcciones();
     PilaAcciones accionesDeshechas=new PilaAcciones();
+    String nombre;
      
     /**
      *Constructor vacio de la base de datos

@@ -4,6 +4,8 @@
  */
 package Interfaz;
 
+import static Interfaz.MenuPrincipal.bd;
+
 /**
  *
  * @author krisc
@@ -56,6 +58,11 @@ public class Nombre extends javax.swing.JFrame {
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Aceptar");
         jButton1.setBorder(null);
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -107,6 +114,47 @@ public class Nombre extends javax.swing.JFrame {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         
     }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        if(bd.getConfiguracion().isPosicion()){
+            switch (bd.getConfiguracion().getTamanno()) {
+                case 3 ->{
+                        Jugar3x3 juego= new Jugar3x3();
+                        juego.setVisible(true);
+                        this.dispose();}
+                case 4 ->{
+                        Jugar4x4 juego= new Jugar4x4();
+                        juego.setVisible(true);
+                        this.dispose();}
+                case 5 ->{
+                        Jugar5x5 juego= new Jugar5x5();
+                        juego.setVisible(true);
+                        this.dispose();}
+                case 6 ->{
+                        Jugar juego= new Jugar();
+                        juego.setVisible(true);
+                        this.dispose();}
+                case 7 ->{
+                        Jugar7x7 juego= new Jugar7x7();
+                        juego.setVisible(true);
+                        this.dispose();}
+                case 8 ->{
+                        Jugar8x8 juego= new Jugar8x8();
+                        juego.setVisible(true);
+                        this.dispose();}
+                case 9 ->{
+                        Jugar9x9 juego= new Jugar9x9();
+                        juego.setVisible(true);
+                        this.dispose();}
+                default -> {
+                }
+            }
+        }else{
+            JugarIzquierda juego= new JugarIzquierda();
+            juego.setVisible(true);
+            this.dispose();
+        }
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments

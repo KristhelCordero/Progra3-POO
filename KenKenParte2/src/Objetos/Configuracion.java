@@ -15,6 +15,7 @@ public class Configuracion implements Serializable{
     int dificultad; //1:facil; 2: medio; 3:dificil.
     int reloj; //1: cronometro; 2: timer; 3: no.
     Timer timer=new Timer();
+    int tamanno; //3-9: Tamaño de la cuadrícula
 
     /**
      * Constructor de configuracion
@@ -23,12 +24,13 @@ public class Configuracion implements Serializable{
      * @param dificultad
      * @param reloj
      */
-    public Configuracion(boolean posicion, boolean sonido, int dificultad, int reloj) {
+    public Configuracion(boolean posicion, boolean sonido, int dificultad, int reloj, int tamanno) {
         this.posicionBarra = posicion;
         this.sonido = sonido;
         this.dificultad = dificultad;
         this.reloj = reloj;
         this.timer.resetearTimer();
+        this.tamanno = tamanno;
     }
 
     /**
@@ -171,6 +173,10 @@ public class Configuracion implements Serializable{
         this.sonido = sonido;
         this.dificultad = dificultad;
         this.reloj = reloj;
+    }
+    
+    public int getTamanno() {
+        return tamanno;
     }
 
     /**
