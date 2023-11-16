@@ -39,6 +39,7 @@ public class Configuracion implements Serializable{
      * @param dificultad
      * @param reloj
      * @param timer
+     * @param tamanno
      */
     public Configuracion(boolean posicion, boolean sonido, int dificultad, int reloj, Timer timer, int tamanno) {
         this.posicionBarra = posicion;
@@ -167,12 +168,14 @@ public class Configuracion implements Serializable{
      * @param sonido
      * @param dificultad
      * @param reloj
+     * @param tamanno
      */
-    public void setConfiguracion(boolean posicion, boolean sonido, int dificultad, int reloj) {
+    public void setConfiguracion(boolean posicion, boolean sonido, int dificultad, int reloj, int tamanno) {
         this.posicionBarra = posicion;
         this.sonido = sonido;
         this.dificultad = dificultad;
         this.reloj = reloj;
+        this.tamanno = tamanno;
     }
     
     public int getTamanno() {
@@ -187,7 +190,9 @@ public class Configuracion implements Serializable{
         setConfiguracion(configuracion.posicionBarra,
                 configuracion.sonido,
                 configuracion.dificultad,
-                configuracion.dificultad);
+                configuracion.reloj,
+                configuracion.tamanno);
+                   
     }
 
     /**
