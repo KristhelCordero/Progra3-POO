@@ -1,4 +1,3 @@
-
 package Objetos;
 
 import java.io.File;
@@ -27,6 +26,7 @@ public class BD {
     List<KenKen> listaKenKen = new ArrayList<>();
     PilaAcciones acciones=new PilaAcciones();
     PilaAcciones accionesDeshechas=new PilaAcciones();
+    String nombre;
      
     /**
      *Constructor vacio de la base de datos
@@ -83,8 +83,16 @@ public class BD {
         this.listaKenKen = listaKenKen;
     }
     
+    public void setNombre(String nombre){
+        this.nombre=nombre;
+    }
+    
+    public String getNombre(){
+        return nombre;
+    }
+    
     //KENKEN
-
+    
     /**
      * Saca el nodo extraido del xml y lo convierte en un objeto KenKen
      * @param eHijo

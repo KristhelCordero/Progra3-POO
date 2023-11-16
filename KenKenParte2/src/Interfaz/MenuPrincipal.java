@@ -195,15 +195,9 @@ public class MenuPrincipal extends javax.swing.JFrame {
     Despliega el Juego 
     */
     private void jButtonJugarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonJugarActionPerformed
-        if(bd.getConfiguracion().isPosicion()){
-            Jugar juego= new Jugar();
-            juego.setVisible(true);
-            this.dispose();
-        }else{
-            JugarIzquierda juego= new JugarIzquierda();
-            juego.setVisible(true);
-            this.dispose();
-        }
+        Nombre ingreseNombre=new Nombre();
+        ingreseNombre.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jButtonJugarActionPerformed
     /*
     Muestra la información sobre el programa
