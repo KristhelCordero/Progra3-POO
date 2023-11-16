@@ -473,8 +473,8 @@ public class Jugar9x9 extends javax.swing.JFrame {
         jLabel_9_1 = new javax.swing.JLabel();
         jLabel_9_2 = new javax.swing.JLabel();
         jLabel_9_3 = new javax.swing.JLabel();
-        jLabel_9_4 = new javax.swing.JLabel();
         jLabel_9_5 = new javax.swing.JLabel();
+        jLabel_9_4 = new javax.swing.JLabel();
         jLabel_9_6 = new javax.swing.JLabel();
         jLabel_8_1 = new javax.swing.JLabel();
         jLabel_8_2 = new javax.swing.JLabel();
@@ -972,20 +972,6 @@ public class Jugar9x9 extends javax.swing.JFrame {
         });
         jPanel1.add(jLabel_9_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(219, 608, 70, 74));
 
-        jLabel_9_4.setBackground(new java.awt.Color(209, 232, 239));
-        jLabel_9_4.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
-        jLabel_9_4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel_9_4.setToolTipText("");
-        jLabel_9_4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jLabel_9_4.setMaximumSize(new java.awt.Dimension(36, 16));
-        jLabel_9_4.setMinimumSize(new java.awt.Dimension(36, 16));
-        jLabel_9_4.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel_9_4MouseClicked(evt);
-            }
-        });
-        jPanel1.add(jLabel_9_4, new org.netbeans.lib.awtextra.AbsoluteConstraints(357, 608, 70, 74));
-
         jLabel_9_5.setBackground(new java.awt.Color(209, 232, 239));
         jLabel_9_5.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
         jLabel_9_5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -998,7 +984,21 @@ public class Jugar9x9 extends javax.swing.JFrame {
                 jLabel_9_5MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel_9_5, new org.netbeans.lib.awtextra.AbsoluteConstraints(288, 608, 70, 74));
+        jPanel1.add(jLabel_9_5, new org.netbeans.lib.awtextra.AbsoluteConstraints(357, 608, 70, 74));
+
+        jLabel_9_4.setBackground(new java.awt.Color(209, 232, 239));
+        jLabel_9_4.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
+        jLabel_9_4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel_9_4.setToolTipText("");
+        jLabel_9_4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel_9_4.setMaximumSize(new java.awt.Dimension(36, 16));
+        jLabel_9_4.setMinimumSize(new java.awt.Dimension(36, 16));
+        jLabel_9_4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel_9_4MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel_9_4, new org.netbeans.lib.awtextra.AbsoluteConstraints(288, 608, 70, 74));
 
         jLabel_9_6.setBackground(new java.awt.Color(209, 232, 239));
         jLabel_9_6.setFont(new java.awt.Font("Gadugi", 1, 36)); // NOI18N
@@ -1699,7 +1699,7 @@ public class Jugar9x9 extends javax.swing.JFrame {
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagenesBotones/1.png"))); // NOI18N
         jButton1.setBorder(null);
         jButton1.setContentAreaFilled(false);
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton1.setPreferredSize(new java.awt.Dimension(40, 40));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -1711,7 +1711,7 @@ public class Jugar9x9 extends javax.swing.JFrame {
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagenesBotones/2.png"))); // NOI18N
         jButton2.setBorder(null);
         jButton2.setContentAreaFilled(false);
-        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton2.setPreferredSize(new java.awt.Dimension(40, 40));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1722,7 +1722,7 @@ public class Jugar9x9 extends javax.swing.JFrame {
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagenesBotones/3.png"))); // NOI18N
         jButton3.setBorder(null);
         jButton3.setContentAreaFilled(false);
-        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton3.setPreferredSize(new java.awt.Dimension(40, 40));
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1733,7 +1733,7 @@ public class Jugar9x9 extends javax.swing.JFrame {
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagenesBotones/5.png"))); // NOI18N
         jButton5.setBorder(null);
         jButton5.setContentAreaFilled(false);
-        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton5.setPreferredSize(new java.awt.Dimension(40, 40));
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1744,7 +1744,7 @@ public class Jugar9x9 extends javax.swing.JFrame {
         jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagenesBotones/6.png"))); // NOI18N
         jButton6.setBorder(null);
         jButton6.setContentAreaFilled(false);
-        jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton6.setPreferredSize(new java.awt.Dimension(40, 40));
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1755,7 +1755,7 @@ public class Jugar9x9 extends javax.swing.JFrame {
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagenesBotones/4.png"))); // NOI18N
         jButton4.setBorder(null);
         jButton4.setContentAreaFilled(false);
-        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton4.setPreferredSize(new java.awt.Dimension(40, 40));
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1777,7 +1777,7 @@ public class Jugar9x9 extends javax.swing.JFrame {
         jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagenesBotones/7.png"))); // NOI18N
         jButton7.setBorder(null);
         jButton7.setContentAreaFilled(false);
-        jButton7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton7.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton7.setPreferredSize(new java.awt.Dimension(40, 40));
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1788,7 +1788,7 @@ public class Jugar9x9 extends javax.swing.JFrame {
         jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagenesBotones/8.png"))); // NOI18N
         jButton8.setBorder(null);
         jButton8.setContentAreaFilled(false);
-        jButton8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton8.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton8.setPreferredSize(new java.awt.Dimension(40, 40));
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1799,7 +1799,7 @@ public class Jugar9x9 extends javax.swing.JFrame {
         jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagenesBotones/9.png"))); // NOI18N
         jButton9.setBorder(null);
         jButton9.setContentAreaFilled(false);
-        jButton9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton9.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton9.setPreferredSize(new java.awt.Dimension(40, 40));
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2569,17 +2569,17 @@ public class Jugar9x9 extends javax.swing.JFrame {
         this.repaint();
     }//GEN-LAST:event_jLabel_9_3MouseClicked
 
-    private void jLabel_9_4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_9_4MouseClicked
-        desOpacarLabels();
-        jLabel_9_4.setOpaque(true);
-        this.repaint();
-    }//GEN-LAST:event_jLabel_9_4MouseClicked
-
     private void jLabel_9_5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_9_5MouseClicked
         desOpacarLabels();
         jLabel_9_5.setOpaque(true);
         this.repaint();
     }//GEN-LAST:event_jLabel_9_5MouseClicked
+
+    private void jLabel_9_4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_9_4MouseClicked
+        desOpacarLabels();
+        jLabel_9_4.setOpaque(true);
+        this.repaint();
+    }//GEN-LAST:event_jLabel_9_4MouseClicked
 
     private void jLabel_9_6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_9_6MouseClicked
         desOpacarLabels();
