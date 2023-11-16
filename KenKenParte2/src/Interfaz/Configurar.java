@@ -433,7 +433,7 @@ public class Configurar extends javax.swing.JFrame {
      */
     private void jButtonAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAceptarActionPerformed
         boolean posicion, sonido;
-        int dificultad, reloj;
+        int dificultad, reloj, tamanno;
         if(jRBDificil.isSelected()){
            dificultad=3;
         }else if (jRBmedio.isSelected()){
@@ -451,8 +451,23 @@ public class Configurar extends javax.swing.JFrame {
             segundos=Integer.parseInt(jComboBoxSegundos.getSelectedItem().toString());
             milisegundos=67;
         }else{reloj=1;}
+        if(jRB3x3.isSelected()){
+            tamanno=3;
+        }else if(jRB4x4.isSelected()){
+            tamanno=4;
+        }else if(jRB5x5.isSelected()){
+            tamanno=5;
+        }else if(jRB6x6.isSelected()){
+            tamanno=6;
+        }else if(jRB7x7.isSelected()){
+            tamanno=7;
+        }else if(jRB8x8.isSelected()){
+            tamanno=8;
+        }else{
+            tamanno=9;
+        }
         Objetos.Timer timer= new Objetos.Timer(hora,minutos,segundos,milisegundos);
-        Configuracion config=new Configuracion(posicion, sonido, dificultad, reloj, timer);
+        Configuracion config=new Configuracion(posicion, sonido, dificultad, reloj, timer, tamanno);
         bd.setConfiguracion(config);
         JOptionPane.showMessageDialog(null, "Su configuración ha sido guardada");
     }//GEN-LAST:event_jButtonAceptarActionPerformed
