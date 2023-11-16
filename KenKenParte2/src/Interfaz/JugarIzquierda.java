@@ -1625,7 +1625,7 @@ public class JugarIzquierda extends javax.swing.JFrame {
      */
     private void jButtonValidarJuegoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonValidarJuegoActionPerformed
         boolean[][] solucion;
-        solucion=bd.buscarKenKen(kenken).validarSolucion(matrizDeLabels);
+        solucion=bd.buscarKenKen(kenken).validarSolucion6x6(matrizDeLabels);
         validarKenKen(solucion);
         if(bd.getConfiguracion().getReloj()==1){
             cronometro.stop();
