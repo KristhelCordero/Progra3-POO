@@ -83,6 +83,9 @@ public class BD {
         this.listaKenKen = listaKenKen;
     }
     
+    public void setNombre(String nombre){
+        this.nombre=nombre;
+    }
     //KENKEN
 
     /**
