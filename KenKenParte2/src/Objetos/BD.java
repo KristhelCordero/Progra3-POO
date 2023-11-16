@@ -86,8 +86,13 @@ public class BD {
     public void setNombre(String nombre){
         this.nombre=nombre;
     }
+    
+    public String getNombre(){
+        return nombre;
+    }
+    
     //KENKEN
-
+    
     /**
      * Saca el nodo extraido del xml y lo convierte en un objeto KenKen
      * @param eHijo
