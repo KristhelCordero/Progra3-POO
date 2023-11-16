@@ -240,6 +240,33 @@ public class Jugar9x9 extends javax.swing.JFrame {
         matrizDeLabels[5][6]=jLabel_6_7;
         matrizDeLabels[5][7]=jLabel_6_8;
         matrizDeLabels[5][8]=jLabel_6_9;
+        matrizDeLabels[6][0]=jLabel_7_1;
+        matrizDeLabels[6][1]=jLabel_7_2;
+        matrizDeLabels[6][2]=jLabel_7_3;
+        matrizDeLabels[6][3]=jLabel_7_4;
+        matrizDeLabels[6][4]=jLabel_7_5;
+        matrizDeLabels[6][5]=jLabel_7_6;
+        matrizDeLabels[6][6]=jLabel_7_7;
+        matrizDeLabels[6][7]=jLabel_7_8;
+        matrizDeLabels[6][8]=jLabel_7_9;
+        matrizDeLabels[7][0]=jLabel_8_1;
+        matrizDeLabels[7][1]=jLabel_8_2;
+        matrizDeLabels[7][2]=jLabel_8_3;
+        matrizDeLabels[7][3]=jLabel_8_4;
+        matrizDeLabels[7][4]=jLabel_8_5;
+        matrizDeLabels[7][5]=jLabel_8_6;
+        matrizDeLabels[7][6]=jLabel_8_7;
+        matrizDeLabels[7][7]=jLabel_8_8;
+        matrizDeLabels[7][8]=jLabel_8_9;
+        matrizDeLabels[8][0]=jLabel_9_1;
+        matrizDeLabels[8][1]=jLabel_9_2;
+        matrizDeLabels[8][2]=jLabel_9_3;
+        matrizDeLabels[8][3]=jLabel_9_4;
+        matrizDeLabels[8][4]=jLabel_9_5;
+        matrizDeLabels[8][5]=jLabel_9_6;
+        matrizDeLabels[8][6]=jLabel_9_7;
+        matrizDeLabels[8][7]=jLabel_9_8;
+        matrizDeLabels[8][8]=jLabel_9_9;
     }
     
     /**
