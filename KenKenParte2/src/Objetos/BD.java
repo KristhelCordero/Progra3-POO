@@ -447,6 +447,7 @@ public class BD {
         for(Marca marca:podio){
             if (marca.dificultad==dificultad&&marca.tamannoKenKen==dimension){
                 marcas.add(marca);
+                annadidos++;
             }
         }
         return marcas;
