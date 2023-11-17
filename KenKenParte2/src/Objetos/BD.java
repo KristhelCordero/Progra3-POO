@@ -444,8 +444,9 @@ public class BD {
     public List<Marca> sacarMejoresMarcas(int dimension, int dificultad){
         ordenarPodioPorTiempo();
         List<Marca> marcas = new ArrayList<>();
+        int annadidos=0;
         for(Marca marca:podio){
-            if (marca.dificultad==dificultad&&marca.tamannoKenKen==dimension){
+            if (annadidos<3 && marca.dificultad==dificultad && marca.tamannoKenKen==dimension){
                 marcas.add(marca);
                 annadidos++;
             }
