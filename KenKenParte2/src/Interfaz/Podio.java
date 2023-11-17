@@ -5,6 +5,8 @@
 package Interfaz;
 
 import static Interfaz.MenuPrincipal.bd;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -39,6 +41,21 @@ public class Podio extends javax.swing.JFrame {
     List<Objetos.Marca> podio7x7Dificil = bd.sacarMejoresMarcas(7,3);
     List<Objetos.Marca> podio8x8Dificil = bd.sacarMejoresMarcas(8,3);
     List<Objetos.Marca> podio9x9Dificil = bd.sacarMejoresMarcas(9,3);
+    
+    
+    //lista de listas 
+    //recomendado recorrer con doble for
+    List<List<Objetos.Marca>> todasLasMarcas = new ArrayList<List<Objetos.Marca>>(
+        Arrays.asList(
+                podio3x3Facil, podio3x3Medio, podio3x3Dificil,
+                podio4x4Facil, podio4x4Medio, podio4x4Dificil,
+                podio5x5Facil, podio5x5Medio, podio5x5Dificil,
+                podio6x6Facil, podio6x6Medio, podio6x6Dificil,
+                podio7x7Facil, podio7x7Medio, podio7x7Dificil,
+                podio8x8Facil, podio8x8Medio, podio8x8Dificil,
+                podio9x9Facil, podio9x9Medio, podio9x9Dificil
+        )
+    );
     
     /*
     podio3x3Facil[0].nombre
