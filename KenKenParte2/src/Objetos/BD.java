@@ -445,10 +445,14 @@ public class BD {
         ordenarPodioPorTiempo();
         List<Marca> marcas = new ArrayList<>();
         for(Marca marca:podio){
-            
+            if (marca.dificultad==dificultad&&marca.tamannoKenKen==dimension){
+                marcas.add(marca);
+            }
         }
         return marcas;
     }
+    
+    
 }
 
     
