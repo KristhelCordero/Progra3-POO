@@ -63,6 +63,8 @@ public class Funciones {
         }
     }
     
+
+    
     /**
      * Lee un archivo binario y extrae un objeto configuracion 
      * @return configuracion

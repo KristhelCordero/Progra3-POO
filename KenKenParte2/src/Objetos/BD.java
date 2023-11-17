@@ -1,10 +1,18 @@
 package Objetos;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -29,6 +37,7 @@ public class BD {
     PilaAcciones accionesDeshechas=new PilaAcciones();
     String nombre;
      
+    List<Marca> podio = new ArrayList<>();
     /**
      *Constructor vacio de la base de datos
      */
@@ -385,5 +394,69 @@ public class BD {
         accionesDeshechas.clear();
     }
     
+    //PODIO
+    public void cargarPodio(){
+        File archivo = new File("kenken2023podio.dat");
+        try{
+            FileInputStream fis = new FileInputStream(archivo);
+            ObjectInputStream ois;
+            ois = new ObjectInputStream(fis);
+            podio = (List<Marca>) ois.readObject();
+            System.out.println("Archivo 'kenken2023podio.dat' leido con exito");
+        }catch (Exception e){ 
+            System.out.println("Error");
+            e.printStackTrace();
+        }
+        
+    }
     
+    public void actualizarArchivoBinarioPodio( ){
+        File archivo = new File("kenken2023podio.dat");
+        try{
+            FileOutputStream fos = new FileOutputStream(archivo) ;
+            ObjectOutputStream oos= new ObjectOutputStream(fos);
+            oos.writeObject(podio);
+            oos.close();
+            fos.close();
+        }catch (Exception e){
+            System.out.println("Error al escribir el podio");
+            e.printStackTrace();
+        }
+    }
+    public void annadirMarcaAlPodio(String jugador, int horas,
+            int minutos, int segundos, int tamannoKenKen, int dificultad){
+        Marca marca=new Marca(jugador,horas,minutos,segundos,tamannoKenKen,dificultad);
+        podio.add(marca);
+        actualizarArchivoBinarioPodio();
+    }
+    
+
+    public void ordenarPodioPorTiempo() {
+        Comparator<Marca> porTiempo = Comparator
+                .comparingInt(Marca::getHoras)
+                .thenComparingInt(Marca::getMinutos)
+                .thenComparingInt(Marca::getSegundos);
+
+        Collections.sort(podio, porTiempo);
+
+    }
+    
+    public List<Marca> sacarMejoresMarcas(int dimension, int dificultad){
+        ordenarPodioPorTiempo();
+        List<Marca> marcas = new ArrayList<>();
+        for(Marca marca:podio){
+            
+        }
+        return marcas;
+    }
 }
+
+    
+    
+    
+
+    
+    
+    
+    
+
