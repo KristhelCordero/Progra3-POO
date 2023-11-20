@@ -146,9 +146,9 @@ public class Nombre extends javax.swing.JFrame {
                 }
             }
         }else{
-            JugarIzquierda juego= new JugarIzquierda();
-            juego.setVisible(true);
-            this.dispose();
+            //JugarIzquierda juego= new JugarIzquierda();
+            //juego.setVisible(true);
+            //this.dispose();
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 

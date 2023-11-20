@@ -27,7 +27,7 @@ import javax.swing.Timer;
  */
 public class Jugar5x5 extends javax.swing.JFrame {
     private JLabel[][] matrizDeLabels;
-    private boolean iniciado, finalizadoTimer;
+    private boolean iniciado, finalizadoTimer, expirado;
     private final String kenken=bd.extraerKenKenActual5x5();
     private Timer cronometro, timer;
     private int horas=bd.getConfiguracion().getTimer().getHora();
@@ -48,7 +48,7 @@ public class Jugar5x5 extends javax.swing.JFrame {
         this.crearMatrizLabels();
         this.definirColorLabels();
         this.setLocationRelativeTo(this);
-        iniciado=false;
+        iniciado=expirado=false;
         finalizadoTimer=false;
         setImageLabel(kenken);
         //bd.getConfiguracion().setReloj(2);
@@ -376,6 +376,24 @@ public class Jugar5x5 extends javax.swing.JFrame {
             }
         }
         this.repaint();
+    }
+    
+    /**
+     *  Guarda el tiempo y nombre de la persona para mostrarlo en el podio
+     */
+    public void guardarMarca(){
+        if(bd.getConfiguracion().getReloj()==2 && !expirado){
+            bd.annadirMarcaAlPodio(bd.getNombre(), 
+                (bd.getConfiguracion().getTimer().getHora()-horas), 
+                (bd.getConfiguracion().getTimer().getMinuto()-minutos), 
+                (bd.getConfiguracion().getTimer().getSegundo()-segundos),
+                    bd.getConfiguracion().getTamanno(), 
+                    bd.getConfiguracion().getDificultad());
+        }else if(bd.getConfiguracion().getReloj()==1 || (bd.getConfiguracion().getReloj()==2 && expirado)){
+            bd.annadirMarcaAlPodio(bd.getNombre(), horas, minutos, segundos,
+                bd.getConfiguracion().getTamanno(), 
+                bd.getConfiguracion().getDificultad());
+        }
     }
     /**
      * This method is called from within the constructor to initialize the form.
@@ -1378,6 +1396,7 @@ public class Jugar5x5 extends javax.swing.JFrame {
             }else{
                 JOptionPane.showMessageDialog(null, "FELICIDADES, JUEGO COMPLETADO"); 
             }
+            guardarMarca();
         }else{
             int dialogResult = JOptionPane.showConfirmDialog(this, 
             "HAY ERRORES EN EL JUEGO! Desea corregirlos?", 

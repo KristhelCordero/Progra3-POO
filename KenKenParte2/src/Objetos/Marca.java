@@ -79,5 +79,9 @@ public class Marca implements Serializable{
         this.dificultad = dificultad;
     }
     
+    @Override
+    public String toString(){
+        return jugador+" - "+horas+":"+minutos+":"+segundos;
+    }
     
 }

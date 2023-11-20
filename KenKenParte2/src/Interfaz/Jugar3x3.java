@@ -34,6 +34,7 @@ public class Jugar3x3 extends javax.swing.JFrame {
     private int minutos=bd.getConfiguracion().getTimer().getMinuto();
     private int segundos=bd.getConfiguracion().getTimer().getSegundo();
     private int milisegundos=bd.getConfiguracion().getTimer().getMilisegundo();
+    private boolean expirado;
     /**
      * Crea un nuevo JFrame llamado Jugar, con los botoens debidamente apagados y las 
      * especificaciones acordes a la configuración del usuario
@@ -48,8 +49,7 @@ public class Jugar3x3 extends javax.swing.JFrame {
         this.crearMatrizLabels();
         this.definirColorLabels();
         this.setLocationRelativeTo(this);
-        iniciado=false;
-        finalizadoTimer=false;
+        iniciado=finalizadoTimer=expirado=false;
         setImageLabel(kenken);
         //bd.getConfiguracion().setReloj(2);
         switch (bd.getConfiguracion().getReloj()) {
@@ -145,6 +145,7 @@ public class Jugar3x3 extends javax.swing.JFrame {
             int dialogButton=JOptionPane.showConfirmDialog(null,
                 "TIEMPO EXPIRADO! Desea coninuar con este mismo juego?",
                 "Confirmación",JOptionPane.YES_NO_OPTION);
+            expirado=true;
             if(dialogButton==JOptionPane.YES_OPTION){
                 horas=bd.getConfiguracion().getTimer().getHora();
                 minutos=bd.getConfiguracion().getTimer().getMinuto();
@@ -360,6 +361,24 @@ public class Jugar3x3 extends javax.swing.JFrame {
             }
         }
         this.repaint();
+    }
+    
+    /**
+     * Guarda el tiempo y nombre de la persona para mostrarlo en el podio
+     */
+    public void guardarMarca(){
+        if(bd.getConfiguracion().getReloj()==2 && !expirado){
+            bd.annadirMarcaAlPodio(bd.getNombre(), 
+                (bd.getConfiguracion().getTimer().getHora()-horas), 
+                (bd.getConfiguracion().getTimer().getMinuto()-minutos), 
+                (bd.getConfiguracion().getTimer().getSegundo()-segundos),
+                    bd.getConfiguracion().getTamanno(), 
+                    bd.getConfiguracion().getDificultad());
+        }else if(bd.getConfiguracion().getReloj()==1 || (bd.getConfiguracion().getReloj()==2 && expirado)){
+            bd.annadirMarcaAlPodio(bd.getNombre(), horas, minutos, segundos,
+                bd.getConfiguracion().getTamanno(), 
+                bd.getConfiguracion().getDificultad());
+        }
     }
     /**
      * This method is called from within the constructor to initialize the form.
@@ -971,6 +990,7 @@ public class Jugar3x3 extends javax.swing.JFrame {
             }else{
                 JOptionPane.showMessageDialog(null, "FELICIDADES, JUEGO COMPLETADO"); 
             }
+            guardarMarca();
         }else{
             int dialogResult = JOptionPane.showConfirmDialog(this, 
             "HAY ERRORES EN EL JUEGO! Desea corregirlos?", 
