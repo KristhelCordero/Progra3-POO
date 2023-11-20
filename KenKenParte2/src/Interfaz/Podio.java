@@ -1,12 +1,65 @@
 
 package Interfaz;
 
+import static Interfaz.MenuPrincipal.bd;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /**
  *
  * @author krisc
  */
 public class Podio extends javax.swing.JFrame {
+    
+    
+    
+    List<Objetos.Marca> podio3x3Facil = bd.sacarMejoresMarcas(3,1);
+    List<Objetos.Marca> podio4x4Facil = bd.sacarMejoresMarcas(4,1);
+    List<Objetos.Marca> podio5x5Facil = bd.sacarMejoresMarcas(5,1);
+    List<Objetos.Marca> podio6x6Facil = bd.sacarMejoresMarcas(6,1);
+    List<Objetos.Marca> podio7x7Facil = bd.sacarMejoresMarcas(7,1);
+    List<Objetos.Marca> podio8x8Facil = bd.sacarMejoresMarcas(8,1);
+    List<Objetos.Marca> podio9x9Facil = bd.sacarMejoresMarcas(9,1);
 
+
+    List<Objetos.Marca> podio3x3Medio = bd.sacarMejoresMarcas(3,2);
+    List<Objetos.Marca> podio4x4Medio = bd.sacarMejoresMarcas(4,2);
+    List<Objetos.Marca> podio5x5Medio = bd.sacarMejoresMarcas(5,2);
+    List<Objetos.Marca> podio6x6Medio = bd.sacarMejoresMarcas(6,2);
+    List<Objetos.Marca> podio7x7Medio = bd.sacarMejoresMarcas(7,2);
+    List<Objetos.Marca> podio8x8Medio = bd.sacarMejoresMarcas(8,2);
+    List<Objetos.Marca> podio9x9Medio = bd.sacarMejoresMarcas(9,2);
+    
+    List<Objetos.Marca> podio3x3Dificil = bd.sacarMejoresMarcas(3,3);
+    List<Objetos.Marca> podio4x4Dificil = bd.sacarMejoresMarcas(4,3);
+    List<Objetos.Marca> podio5x5Dificil = bd.sacarMejoresMarcas(5,3);
+    List<Objetos.Marca> podio6x6Dificil = bd.sacarMejoresMarcas(6,3);
+    List<Objetos.Marca> podio7x7Dificil = bd.sacarMejoresMarcas(7,3);
+    List<Objetos.Marca> podio8x8Dificil = bd.sacarMejoresMarcas(8,3);
+    List<Objetos.Marca> podio9x9Dificil = bd.sacarMejoresMarcas(9,3);
+    
+    
+    //lista de listas 
+    //recomendado recorrer con doble for
+    List<List<Objetos.Marca>> todasLasMarcas = new ArrayList<List<Objetos.Marca>>(
+        Arrays.asList(
+                podio3x3Facil, podio3x3Medio, podio3x3Dificil,
+                podio4x4Facil, podio4x4Medio, podio4x4Dificil,
+                podio5x5Facil, podio5x5Medio, podio5x5Dificil,
+                podio6x6Facil, podio6x6Medio, podio6x6Dificil,
+                podio7x7Facil, podio7x7Medio, podio7x7Dificil,
+                podio8x8Facil, podio8x8Medio, podio8x8Dificil,
+                podio9x9Facil, podio9x9Medio, podio9x9Dificil
+        )
+    );
+    
+    /*
+    podio3x3Facil[0].nombre
+    
+    */
+    
+    
     /**
      * Creates new form Podio
      */
@@ -48,10 +101,10 @@ public class Podio extends javax.swing.JFrame {
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 140, Short.MAX_VALUE)
+            .addGap(0, 150, Short.MAX_VALUE)
         );
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 790, 140));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 790, 150));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -61,7 +114,7 @@ public class Podio extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 600, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
