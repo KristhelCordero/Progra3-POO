@@ -203,9 +203,9 @@ public class BD {
         
         int numeroKenKen = rand.nextInt(3) + 1;
         switch (configuracion.getDificultad()) {
-            case 1 -> nombre+="E-"+Integer.toString(numeroKenKen)+"_in.png";
-            case 2 -> nombre+="H-"+Integer.toString(numeroKenKen)+"_in.png";
-            default -> nombre+="D-"+Integer.toString(numeroKenKen)+"_in.png";
+            case 1 -> nombre+="6x6E-"+Integer.toString(numeroKenKen)+"_in.png";
+            case 2 -> nombre+="6x6H-"+Integer.toString(numeroKenKen)+"_in.png";
+            default -> nombre+="6x6D-"+Integer.toString(numeroKenKen)+"_in.png";
         }
         return nombre;
     }
