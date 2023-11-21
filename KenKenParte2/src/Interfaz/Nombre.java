@@ -150,6 +150,7 @@ public class Nombre extends javax.swing.JFrame {
             //juego.setVisible(true);
             //this.dispose();
         }
+        bd.setNombre(jTextField1.getText());
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

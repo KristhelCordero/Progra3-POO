@@ -36,7 +36,7 @@ public class BD {
     PilaAcciones acciones=new PilaAcciones();
     PilaAcciones accionesDeshechas=new PilaAcciones();
     String nombre;
-     
+    
     List<Marca> podio = new ArrayList<>();
     /**
      *Constructor vacio de la base de datos
