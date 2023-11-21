@@ -42,7 +42,7 @@ public class BD {
      *Constructor vacio de la base de datos
      */
     public void BD(){
-
+        cargarPodio();
     }
     
     /**
