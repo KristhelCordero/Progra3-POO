@@ -2,6 +2,7 @@
 package Interfaz;
 
 import static Interfaz.MenuPrincipal.bd;
+import Objetos.Marca;
 import java.awt.Color;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -156,14 +157,22 @@ public class Podio extends javax.swing.JFrame {
         matrizDeLabelsActual[0][0]=jLabelTamanno;
         matrizDeLabelsActual[0][1]=jLabelDificultad;
         matrizDeLabelsActual[1][0]=jLabel_1;
-        matrizDeLabelsActual[1][0]=jLabel_2;
-        matrizDeLabelsActual[1][0]=jLabel_3;
+        matrizDeLabelsActual[1][1]=jLabel_2;
+        matrizDeLabelsActual[1][2]=jLabel_3;
+    }
+    
+    public String sacarMarca(int i, int j){
+        List<Marca> marcas=todasLasMarcas.get(i);
+        if (j<marcas.size()){
+            return marcas.get(j).toString();
+        }
+        return "";  
     }
     
     public void mostrarMarcas3x3(){
         for (int i=0; i<3; i++){
             for (int j=0; j<3; j++){
-                matrizDeLabels3x3[i][j].setText(todasLasMarcas.get(i).get(j).toString());
+                matrizDeLabels3x3[i][j].setText(sacarMarca( i, j));
             }
         }
         this.repaint();
@@ -173,7 +182,7 @@ public class Podio extends javax.swing.JFrame {
         int m=3;
         for (int i=0; i<3; i++){
             for (int j=0; j<3; j++){
-                matrizDeLabels4x4[i][j].setText(todasLasMarcas.get(m).get(j).toString());
+                matrizDeLabels4x4[i][j].setText(sacarMarca( m, j));
             }
             m++;
         }
@@ -184,7 +193,7 @@ public class Podio extends javax.swing.JFrame {
         int m=6;
         for (int i=0; i<3; i++){
             for (int j=0; j<3; j++){
-                matrizDeLabels5x5[i][j].setText(todasLasMarcas.get(m).get(j).toString());
+                matrizDeLabels5x5[i][j].setText(sacarMarca( m, j));
             }
             m++;
         }
@@ -195,7 +204,7 @@ public class Podio extends javax.swing.JFrame {
         int m=9;
         for (int i=0; i<3; i++){
             for (int j=0; j<3; j++){
-                matrizDeLabels6x6[i][j].setText(todasLasMarcas.get(m).get(j).toString());
+                matrizDeLabels6x6[i][j].setText(sacarMarca( m, j));
             }
             m++;
         }
@@ -206,7 +215,7 @@ public class Podio extends javax.swing.JFrame {
         int m=12;
         for (int i=0; i<3; i++){
             for (int j=0; j<3; j++){
-                matrizDeLabels7x7[i][j].setText(todasLasMarcas.get(m).get(j).toString());
+                matrizDeLabels7x7[i][j].setText(sacarMarca( m, j));
             }
             m++;
         }
@@ -217,7 +226,7 @@ public class Podio extends javax.swing.JFrame {
         int m=15;
         for (int i=0; i<3; i++){
             for (int j=0; j<3; j++){
-                matrizDeLabels8x8[i][j].setText(todasLasMarcas.get(m).get(j).toString());
+                matrizDeLabels8x8[i][j].setText(sacarMarca( m, j));
             }
             m++;
         }
@@ -228,7 +237,7 @@ public class Podio extends javax.swing.JFrame {
         int m=18;
         for (int i=0; i<3; i++){
             for (int j=0; j<3; j++){
-                matrizDeLabels9x9[i][j].setText(todasLasMarcas.get(m).get(j).toString());
+                matrizDeLabels9x9[i][j].setText(sacarMarca( m, j));
             }
             m++;
         }
@@ -262,7 +271,7 @@ public class Podio extends javax.swing.JFrame {
             }
         }
         for (int j=0; j<3; j++){
-            matrizDeLabelsActual[1][j].setText(todasLasMarcas.get(m).get(j).toString());
+            matrizDeLabelsActual[1][j].setText(sacarMarca( m, j));
         }
         this.repaint();
     }

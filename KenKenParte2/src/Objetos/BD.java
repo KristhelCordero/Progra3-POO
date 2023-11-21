@@ -61,6 +61,32 @@ public class BD {
         return listaDificultad;
     }
 
+    public PilaAcciones getAcciones() {
+        return acciones;
+    }
+
+    public void setAcciones(PilaAcciones acciones) {
+        this.acciones = acciones;
+    }
+
+    public PilaAcciones getAccionesDeshechas() {
+        return accionesDeshechas;
+    }
+
+    public void setAccionesDeshechas(PilaAcciones accionesDeshechas) {
+        this.accionesDeshechas = accionesDeshechas;
+    }
+
+    public List<Marca> getPodio() {
+        return podio;
+    }
+
+    public void setPodio(List<Marca> podio) {
+        this.podio = podio;
+    } 
+    
+    
+    
     /**
      * retorna el objeto configuracion registrado en la base de datos
      * @return
@@ -453,6 +479,8 @@ public class BD {
         }
         return marcas;
     }
+    
+
     
     
     
