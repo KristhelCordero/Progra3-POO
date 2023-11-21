@@ -148,9 +148,38 @@ public class Nombre extends javax.swing.JFrame {
                     }
                 }
             }else{
-                //JugarIzquierda juego= new JugarIzquierda();
-                //juego.setVisible(true);
-                //this.dispose();
+                switch (bd.getConfiguracion().getTamanno()) {
+                    case 3 ->{
+                        Jugar3x3_Izq juego= new Jugar3x3_Izq();
+                        juego.setVisible(true);
+                        this.dispose();}
+                    case 4 ->{
+                        Jugar4x4_Izq juego= new Jugar4x4_Izq();
+                        juego.setVisible(true);
+                        this.dispose();}
+                    case 5 ->{
+                        Jugar5x5_Izq juego= new Jugar5x5_Izq();
+                        juego.setVisible(true);
+                        this.dispose();}
+                    case 6 ->{
+                        JugarIzquierda juego= new JugarIzquierda();
+                        juego.setVisible(true);
+                        this.dispose();}
+                    case 7 ->{
+                        Jugar7x7_Izq juego= new Jugar7x7_Izq();
+                        juego.setVisible(true);
+                        this.dispose();}
+                    case 8 ->{
+                        Jugar8x8_Izq juego= new Jugar8x8_Izq();
+                        juego.setVisible(true);
+                        this.dispose();}
+                    case 9 ->{
+                        Jugar9x9_Izq juego= new Jugar9x9_Izq();
+                        juego.setVisible(true);
+                        this.dispose();}
+                    default -> {
+                    }
+                }
             }
             bd.setNombre(jTextField1.getText());
         }else{
