@@ -1010,7 +1010,7 @@ public class Jugar3x3_Izq extends javax.swing.JFrame {
      */
     private void jButtonValidarJuegoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonValidarJuegoActionPerformed
         boolean[][] solucion;
-        solucion=bd.buscarKenKen(kenken).validarSolucion3x3(matrizDeLabels);
+        solucion=bd.buscarKenKen(kenken).validarSolucion(matrizDeLabels, 3);
         validarKenKen(solucion);
         if(bd.getConfiguracion().getReloj()==1){
             cronometro.stop();

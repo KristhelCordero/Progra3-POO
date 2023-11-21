@@ -1908,7 +1908,7 @@ public class Jugar7x7_Izq extends javax.swing.JFrame {
      */
     private void jButtonValidarJuegoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonValidarJuegoActionPerformed
         boolean[][] solucion;
-        solucion=bd.buscarKenKen(kenken).validarSolucion7x7(matrizDeLabels);
+        solucion=bd.buscarKenKen(kenken).validarSolucion(matrizDeLabels,7);
         validarKenKen(solucion);
         if(bd.getConfiguracion().getReloj()==1){
             cronometro.stop();
