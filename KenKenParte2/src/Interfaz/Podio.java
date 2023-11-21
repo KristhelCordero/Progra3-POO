@@ -265,6 +265,17 @@ public class Podio extends javax.swing.JFrame {
         }
         this.repaint();
     }
+    
+    public void mostrarPodioCompleto(){
+        mostrarPodioActual();
+        mostrarMarcas3x3();
+        mostrarMarcas4x4();
+        mostrarMarcas5x5();
+        mostrarMarcas6x6();
+        mostrarMarcas7x7();
+        mostrarMarcas8x8();
+        mostrarMarcas9x9();
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
