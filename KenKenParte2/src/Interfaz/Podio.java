@@ -79,6 +79,7 @@ public class Podio extends javax.swing.JFrame {
 
         this.crearMatrizLabels();
         this.setLocationRelativeTo(this);
+        this.mostrarPodioCompleto();
     }
 
     public void crearMatrizLabels(){
