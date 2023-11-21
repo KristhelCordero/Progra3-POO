@@ -1,6 +1,7 @@
 package Interfaz;
 
 import static Interfaz.MenuPrincipal.bd;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -112,45 +113,49 @@ public class Nombre extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        if(bd.getConfiguracion().isPosicion()){
-            switch (bd.getConfiguracion().getTamanno()) {
-                case 3 ->{
+        if(jTextField1.getText().length()>=1 && jTextField1.getText().length()<=40){    
+            if(bd.getConfiguracion().isPosicion()){
+                switch (bd.getConfiguracion().getTamanno()) {
+                    case 3 ->{
                         Jugar3x3 juego= new Jugar3x3();
                         juego.setVisible(true);
                         this.dispose();}
-                case 4 ->{
+                    case 4 ->{
                         Jugar4x4 juego= new Jugar4x4();
                         juego.setVisible(true);
                         this.dispose();}
-                case 5 ->{
+                    case 5 ->{
                         Jugar5x5 juego= new Jugar5x5();
                         juego.setVisible(true);
                         this.dispose();}
-                case 6 ->{
+                    case 6 ->{
                         Jugar juego= new Jugar();
                         juego.setVisible(true);
                         this.dispose();}
-                case 7 ->{
+                    case 7 ->{
                         Jugar7x7 juego= new Jugar7x7();
                         juego.setVisible(true);
                         this.dispose();}
-                case 8 ->{
+                    case 8 ->{
                         Jugar8x8 juego= new Jugar8x8();
                         juego.setVisible(true);
                         this.dispose();}
-                case 9 ->{
+                    case 9 ->{
                         Jugar9x9 juego= new Jugar9x9();
                         juego.setVisible(true);
                         this.dispose();}
-                default -> {
+                    default -> {
+                    }
                 }
+            }else{
+                //JugarIzquierda juego= new JugarIzquierda();
+                //juego.setVisible(true);
+                //this.dispose();
             }
+            bd.setNombre(jTextField1.getText());
         }else{
-            //JugarIzquierda juego= new JugarIzquierda();
-            //juego.setVisible(true);
-            //this.dispose();
+            JOptionPane.showMessageDialog(null, "NOMBRE INCORRECTO \nDebe colocar un nombre de entre 1 y 40 caracteres"); 
         }
-        bd.setNombre(jTextField1.getText());
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
