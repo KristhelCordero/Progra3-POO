@@ -165,6 +165,7 @@ public class BD {
     
     /**
      * Toma el archivo XML y saca la lista de KenKen de él
+     * @param xml
      */
     public void extraerXMLListaKenKen(String xml){
         //String dirXMl=KenKen\kenken.xml;
