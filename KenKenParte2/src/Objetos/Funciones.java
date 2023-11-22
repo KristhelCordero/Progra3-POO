@@ -176,7 +176,7 @@ link,FontFactory.getFont(FontFactory.COURIER, 11, BaseColor.BLACK));
     }
     
     
-    public int pasarASegundos(int h, int m, int s){
+    public static int pasarASegundos(int h, int m, int s){
         return s+=(m*60)+(h*3600);
     }
     
@@ -193,7 +193,7 @@ link,FontFactory.getFont(FontFactory.COURIER, 11, BaseColor.BLACK));
         return resultado;
     }
     
-    public List<Integer> extraerTiempoTranscurrido(int horasInic, int minutosInic, int segundosInic,
+    public static List<Integer> extraerTiempoTranscurrido(int horasInic, int minutosInic, int segundosInic,
             int horasAct, int minutosAct, int segundosAct){
         
         segundosInic = pasarASegundos(horasInic, minutosInic, segundosInic);

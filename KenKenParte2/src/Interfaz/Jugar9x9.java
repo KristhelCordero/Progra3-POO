@@ -13,6 +13,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
@@ -438,10 +439,14 @@ public class Jugar9x9 extends javax.swing.JFrame {
      */
     public void guardarMarca(){
         if(bd.getConfiguracion().getReloj()==2 && !expirado){
+            List<Integer>tiempoTrans=Funciones.extraerTiempoTranscurrido(bd.getConfiguracion().getTimer().getHora(), 
+                    bd.getConfiguracion().getTimer().getMinuto(),
+                    bd.getConfiguracion().getTimer().getSegundo(),
+                    horas, minutos, segundos);
+            
+            
             bd.annadirMarcaAlPodio(bd.getNombre(), 
-                (bd.getConfiguracion().getTimer().getHora()-horas), 
-                (bd.getConfiguracion().getTimer().getMinuto()-minutos), 
-                (bd.getConfiguracion().getTimer().getSegundo()-segundos),
+                tiempoTrans.get(0),tiempoTrans.get(1),tiempoTrans.get(2),
                     bd.getConfiguracion().getTamanno(), 
                     bd.getConfiguracion().getDificultad());
         }else if(bd.getConfiguracion().getReloj()==1 || (bd.getConfiguracion().getReloj()==2 && expirado)){

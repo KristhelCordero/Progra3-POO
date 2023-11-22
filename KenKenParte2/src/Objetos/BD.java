@@ -42,7 +42,6 @@ public class BD {
      *Constructor vacio de la base de datos
      */
     public void BD(){
-        cargarPodio();
     }
     
     /**
@@ -422,6 +421,7 @@ public class BD {
     
     //PODIO
     public void cargarPodio(){
+        System.out.println("hola buenas");
         File archivo = new File("kenken2023podio.dat");
         try{
             FileInputStream fis = new FileInputStream(archivo);
