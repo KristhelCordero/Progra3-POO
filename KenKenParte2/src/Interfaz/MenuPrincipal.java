@@ -209,9 +209,13 @@ public class MenuPrincipal extends javax.swing.JFrame {
         menuAcercaDe.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButtonAcercaDeActionPerformed
-
+    /*
+    Muestra el podio
+    */
     private void jButtonAcercaDe1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAcercaDe1ActionPerformed
-        // TODO add your handling code here:
+        Podio podio=new Podio();
+        podio.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jButtonAcercaDe1ActionPerformed
 
     /**
