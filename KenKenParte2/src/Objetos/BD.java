@@ -198,7 +198,9 @@ public class BD {
         }
     }
 
-
+    /**
+     * llama la funcion de extraer xml para cada una de las dimensiones 
+     */
     public void extraerTodosLosXML(){
         List<String> sXML = Arrays.asList("kenken3x3.xml", "kenken4x4.xml", "kenken5x5.xml",
          "kenken6x6.xml", "kenken7x7.xml", "kenken8x8.xml", "kenken9x9.xml");
@@ -236,6 +238,10 @@ public class BD {
     }
     //Configuracion
     
+    /**
+     * extrae un ken ken random de las dimnesiones 3x3
+     * @return nombre
+     */
     public String extraerKenKenActual3x3(){
         Random rand = new Random();
         String nombre = "src/imagenes/";
@@ -245,6 +251,11 @@ public class BD {
         return nombre;
     }
     
+    
+    /**
+     * extrae un ken ken random de las dimnesiones 4x4
+     * @return nombre
+     */
     public String extraerKenKenActual4x4(){
         Random rand = new Random();
         String nombre = "src/imagenes/";
@@ -258,6 +269,10 @@ public class BD {
         return nombre;
     }
     
+    /**
+     * extrae un ken ken random de las dimnesiones 5x5
+     * @return nombre
+     */
     public String extraerKenKenActual5x5(){
         Random rand = new Random();
         String nombre = "src/imagenes/";
@@ -271,6 +286,10 @@ public class BD {
         return nombre;
     }
     
+    /**
+     * extrae un ken ken random de las dimnesiones 7x7
+     * @return nombre
+     */
     public String extraerKenKenActual7x7(){
         Random rand = new Random();
         String nombre = "src/imagenes/";
@@ -284,6 +303,10 @@ public class BD {
         return nombre;
     }
     
+    /**
+     * extrae un ken ken random de las dimnesiones 8x8
+     * @return nombre
+     */
     public String extraerKenKenActual8x8(){
         Random rand = new Random();
         String nombre = "src/imagenes/";
@@ -297,6 +320,10 @@ public class BD {
         return nombre;
     }
     
+    /**
+     * extrae un ken ken random de las dimnesiones 9x9
+     * @return nombre
+     */
     public String extraerKenKenActual9x9(){
         Random rand = new Random();
         String nombre = "src/imagenes/";
@@ -420,8 +447,11 @@ public class BD {
     }
     
     //PODIO
+
+    /**
+     *  carga el podio previo de su respectivo archivo .dat
+     */
     public void cargarPodio(){
-        System.out.println("hola buenas");
         File archivo = new File("kenken2023podio.dat");
         try{
             FileInputStream fis = new FileInputStream(archivo);
@@ -436,6 +466,9 @@ public class BD {
         
     }
     
+    /**
+     *  sube nuevos datos al archivo binario del podio
+     */
     public void actualizarArchivoBinarioPodio( ){
         File archivo = new File("kenken2023podio.dat");
         try{
@@ -449,6 +482,16 @@ public class BD {
             e.printStackTrace();
         }
     }
+
+    /**
+     * annade una marca a la lista de marcas y actualiza el archivo .dat
+     * @param jugador
+     * @param horas
+     * @param minutos
+     * @param segundos
+     * @param tamannoKenKen
+     * @param dificultad
+     */
     public void annadirMarcaAlPodio(String jugador, int horas,
             int minutos, int segundos, int tamannoKenKen, int dificultad){
         Marca marca=new Marca(jugador,horas,minutos,segundos,tamannoKenKen,dificultad);
@@ -456,7 +499,9 @@ public class BD {
         actualizarArchivoBinarioPodio();
     }
     
-
+    /**
+     * ordena la lista de marcas por tiempo para poder sacar solo las 3 mejores
+     */
     public void ordenarPodioPorTiempo() {
         Comparator<Marca> porTiempo = Comparator
                 .comparingInt(Marca::getHoras)
@@ -467,6 +512,13 @@ public class BD {
 
     }
     
+    /**
+     * ordena por tiempo y saca las 3 mejores marcas de la listas de marcas de una dimension
+     * y dificultad determinada
+     * @param dimension
+     * @param dificultad
+     * @return
+     */
     public List<Marca> sacarMejoresMarcas(int dimension, int dificultad){
         ordenarPodioPorTiempo();
         List<Marca> marcas = new ArrayList<>();

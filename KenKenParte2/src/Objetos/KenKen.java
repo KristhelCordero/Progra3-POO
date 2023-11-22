@@ -150,6 +150,11 @@ public class KenKen {
         return matrizCorreccion;
     } 
     
+    /**
+     * valida la solucion del ken ken en las dimensiones 4x4
+     * @param partida
+     * @return matriz de celdas correctas
+     */
     public boolean[][] validarSolucion4x4(JLabel[][] partida){
         boolean[][] matrizCorreccion= new boolean[4][4];
         
@@ -170,6 +175,12 @@ public class KenKen {
         return matrizCorreccion;
     } 
     
+    
+    /**
+     * valida la solucion del ken ken en las dimensiones 5x5
+     * @param partida
+     * @return matriz de celdas correctas
+     */
     public boolean[][] validarSolucion5x5(JLabel[][] partida){
         boolean[][] matrizCorreccion= new boolean[5][5];
         
@@ -190,6 +201,12 @@ public class KenKen {
         return matrizCorreccion;
     } 
     
+    
+    /**
+     * valida la solucion del ken ken en las dimensiones 6x6
+     * @param partida
+     * @return matriz de celdas correctas
+     */
     public boolean[][] validarSolucion6x6(JLabel[][] partida){
         boolean[][] matrizCorreccion= new boolean[6][6];
         
@@ -210,6 +227,12 @@ public class KenKen {
         return matrizCorreccion;
     }
     
+    
+    /**
+     * valida la solucion del ken ken en las dimensiones 7x7
+     * @param partida
+     * @return matriz de celdas correctas
+     */
     public boolean[][] validarSolucion7x7(JLabel[][] partida){
         boolean[][] matrizCorreccion= new boolean[7][7];
         
@@ -230,6 +253,12 @@ public class KenKen {
         return matrizCorreccion;
     } 
     
+    
+    /**
+     * valida la solucion del ken ken en las dimensiones 8x8
+     * @param partida
+     * @return matriz de celdas correctas
+     */
     public boolean[][] validarSolucion8x8(JLabel[][] partida){
         boolean[][] matrizCorreccion= new boolean[8][8];
         
@@ -250,6 +279,11 @@ public class KenKen {
         return matrizCorreccion;
     } 
     
+    /**
+     * valida la solucion del ken ken en las dimensiones 9x9
+     * @param partida
+     * @return matriz de celdas correctas
+     */
     public boolean[][] validarSolucion9x9(JLabel[][] partida){
         boolean[][] matrizCorreccion= new boolean[9][9];
         

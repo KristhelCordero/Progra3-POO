@@ -175,11 +175,22 @@ link,FontFactory.getFont(FontFactory.COURIER, 11, BaseColor.BLACK));
         }
     }
     
-    
+    /**
+     * toma una hora, minutos y segundos y suma la cantidad de segundos total
+     * @param h
+     * @param m
+     * @param s
+     * @return segundos totales
+     */
     public static int pasarASegundos(int h, int m, int s){
         return s+=(m*60)+(h*3600);
     }
     
+    /**
+     * toma un total de segundos y los convierte en horas, minutos y segundos 
+     * @param totalSegundos
+     * @return
+     */
     public static List<Integer> convertirSegundos(int totalSegundos) {
         int horas = totalSegundos / 3600;
         int minutos = (totalSegundos % 3600) / 60;
@@ -193,6 +204,16 @@ link,FontFactory.getFont(FontFactory.COURIER, 11, BaseColor.BLACK));
         return resultado;
     }
     
+    /**
+     * toma el tiempo inicial y el tiempo restante y saca la diferencia, sacando el tiempo transcurrido
+     * @param horasInic
+     * @param minutosInic
+     * @param segundosInic
+     * @param horasAct
+     * @param minutosAct
+     * @param segundosAct
+     * @return tiempo transcurrido (lista con horas, minutos y segundos)
+     */
     public static List<Integer> extraerTiempoTranscurrido(int horasInic, int minutosInic, int segundosInic,
             int horasAct, int minutosAct, int segundosAct){
         
