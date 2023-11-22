@@ -21,6 +21,8 @@ import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.util.ArrayList;
+import java.util.List;
 /**
  * Clase con diversas funciones utiles par el funcionamiento de los metodos aplicados en el programa
  * @author KendallP
@@ -171,5 +173,32 @@ link,FontFactory.getFont(FontFactory.COURIER, 11, BaseColor.BLACK));
         } catch(FileNotFoundException | DocumentException ex){
             return "Error al crear el PDF";
         }
+    }
+    
+    
+    public int pasarASegundos(int h, int m, int s){
+        return s+=(m*60)+(h*3600);
+    }
+    
+    public static List<Integer> convertirSegundos(int totalSegundos) {
+        int horas = totalSegundos / 3600;
+        int minutos = (totalSegundos % 3600) / 60;
+        int segundos = totalSegundos % 60;
+
+        List<Integer> resultado = new ArrayList<>();
+        resultado.add(horas);
+        resultado.add(minutos);
+        resultado.add(segundos);
+
+        return resultado;
+    }
+    
+    public List<Integer> extraerTiempoTranscurrido(int horasInic, int minutosInic, int segundosInic,
+            int horasAct, int minutosAct, int segundosAct){
+        
+        segundosInic = pasarASegundos(horasInic, minutosInic, segundosInic);
+        segundosAct = pasarASegundos(horasAct, minutosAct, segundosAct);
+        
+        return convertirSegundos(segundosInic-segundosAct);
     }
 }
