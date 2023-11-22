@@ -64,7 +64,7 @@ public class Podio extends javax.swing.JFrame {
         )
     );
     /**
-     * Creates new form Podio
+     * Crea un nuevo JFrame de Podio
      */
     public Podio() {
         initComponents();
@@ -83,6 +83,9 @@ public class Podio extends javax.swing.JFrame {
         this.mostrarPodioCompleto();
     }
 
+    /**
+     * Crea una nueva matriz de labels para cada dimensión
+     */
     public void crearMatrizLabels(){
         matrizDeLabels3x3[0][0]=jLabelFacil3x3_1;
         matrizDeLabels3x3[0][1]=jLabelFacil3x3_2;
@@ -161,6 +164,12 @@ public class Podio extends javax.swing.JFrame {
         matrizDeLabelsActual[1][2]=jLabel_3;
     }
     
+    /**
+     *  Busca la marca de un KenKen
+     * @param i
+     * @param j
+     * @return la marca correspondiente o un string vacio en caso de que no exista
+     */
     public String sacarMarca(int i, int j){
         List<Marca> marcas=todasLasMarcas.get(i);
         if (j<marcas.size()){
@@ -169,6 +178,9 @@ public class Podio extends javax.swing.JFrame {
         return "";  
     }
     
+    /**
+     * Muestra en la interfaz las marcas del 3x3
+     */
     public void mostrarMarcas3x3(){
         for (int i=0; i<3; i++){
             for (int j=0; j<3; j++){
@@ -178,6 +190,9 @@ public class Podio extends javax.swing.JFrame {
         this.repaint();
     }
     
+    /**
+     * Muestra en la interfaz las marcas del 4x4
+     */
     public void mostrarMarcas4x4(){
         int m=3;
         for (int i=0; i<3; i++){
@@ -189,6 +204,9 @@ public class Podio extends javax.swing.JFrame {
         this.repaint();
     }
     
+    /**
+     * Muestra en la interfaz las marcas del 5x5
+     */
     public void mostrarMarcas5x5(){
         int m=6;
         for (int i=0; i<3; i++){
@@ -200,6 +218,9 @@ public class Podio extends javax.swing.JFrame {
         this.repaint();
     }
     
+    /**
+     * Muestra en la interfaz las marcas del 6x6
+     */
     public void mostrarMarcas6x6(){
         int m=9;
         for (int i=0; i<3; i++){
@@ -211,6 +232,9 @@ public class Podio extends javax.swing.JFrame {
         this.repaint();
     }
     
+    /**
+     * Muestra en la interfaz las marcas del 7x7
+     */
     public void mostrarMarcas7x7(){
         int m=12;
         for (int i=0; i<3; i++){
@@ -222,6 +246,9 @@ public class Podio extends javax.swing.JFrame {
         this.repaint();
     }
     
+    /**
+     * Muestra en la interfaz las marcas del 8x8
+     */
     public void mostrarMarcas8x8(){
         int m=15;
         for (int i=0; i<3; i++){
@@ -233,6 +260,9 @@ public class Podio extends javax.swing.JFrame {
         this.repaint();
     }
     
+    /**
+     * Muestra en la interfaz las marcas del 9x9
+     */
     public void mostrarMarcas9x9(){
         int m=18;
         for (int i=0; i<3; i++){
@@ -244,6 +274,9 @@ public class Podio extends javax.swing.JFrame {
         this.repaint();
     }
     
+    /**
+     * Muestra en la interfaz las marcas del Ken ken que se está jugando
+     */
     public void mostrarPodioActual(){
         
         matrizDeLabelsActual[0][0].setText(bd.getConfiguracion().getTamanno()+"x"+bd.getConfiguracion().getTamanno());
@@ -276,6 +309,9 @@ public class Podio extends javax.swing.JFrame {
         this.repaint();
     }
     
+    /**
+     * Unifica las funciones anteriores
+     */
     public void mostrarPodioCompleto(){
         mostrarPodioActual();
         mostrarMarcas3x3();
@@ -1414,7 +1450,10 @@ public class Podio extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    
+    /**
+     * Regresa al menu principal
+    */
     private void RegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegresarActionPerformed
         MenuPrincipal menuPrincipal=new MenuPrincipal();
         menuPrincipal.setVisible(true);
